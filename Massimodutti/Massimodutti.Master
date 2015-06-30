@@ -79,19 +79,10 @@
         <footer style="opacity: 1;">
             <!-- Begin ItxContentSpotDisplay.jsp  (MD2_ESpot_FOOTER) -->
             <div id="footer-top">
-                <div class="footer-top-background">
-                    <ul>
-                        <li class="new-apps"><a href="http://www.massimodutti.com/webapp/wcs/stores/servlet/ItxStandardNewAppsPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">ỨNG DỤNG<div></div>
-                        </a></li>
-                        <li class="shops"><a href="javascript:void(0)" onclick="showMap();">CỬA HÀNG<div></div>
-                        </a></li>
-                        <li style="border-right-style: none;"><span style="padding: 19px 0px;">TIN TỨC</span><div style="top: 46px;">
-                            <form id="newsletter-form" action="http://www.massimodutti.com/webapp/wcs/stores/servlet/NewsletterPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">
-                                <input id="newsletter" name="newsletter" type="text" placeholder="Xin nhập email * "></form>
-                        </div>
-                        </li>
-                    </ul>
-                </div>
+	            <div class="footer-top-background">
+		            <ul>
+			            <li class="new-apps"><a href="http://www.massimodutti.com/webapp/wcs/stores/servlet/ItxStandardNewAppsPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">APPS<div></div></a></li><li class="shops"><a href="javascript:void(0)" onclick="showMap();">STORES<div></div></a> </li><li style="border-right-style: none;"><span style="padding: 19px 0px;">NEWSLETTER</span><div style="top: 46px;"><form id="newsletter-form" action="http://www.massimodutti.com/webapp/wcs/stores/servlet/NewsletterPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450"><input id="newsletter" name="newsletter" type="text" placeholder="Please write your email * "></form></div></li></ul>
+	            </div>
             </div>
             <div id="footer-bottom">
                 <div id="footer-menu">
