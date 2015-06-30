@@ -64,6 +64,8 @@
     <Content Include="Include\css\mass-map.css" />
     <Content Include="Include\css\mass-product.css" />
     <Content Include="Include\css\mass-style.css" />
+    <Content Include="Include\images\common\logo.png" />
+    <Content Include="Include\images\common\logo_massimo_dutti.ico" />
     <Content Include="Include\images\common\logo_MD.png" />
     <Content Include="Include\images\companyPage\dropdown-open.png" />
     <Content Include="Include\images\companyPage\dropdown.png" />
