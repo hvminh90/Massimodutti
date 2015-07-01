@@ -137,15 +137,15 @@
             </div>
               <div class="botonera baja">
 
-            <a href="#"
-               onclick="javascript:if(Inditex) {Inditex.trackEvent('/Cesta_de_Compra','seguir_comprando');Inditex.trackEvent( categoryEvent,'Seguir_comprando',null,true);}gotoHome(true);"
-               class="add_art" style="margin-left: 0%;">QUAY LẠI CỬA HÀNG</a>
+            <a href="Index.aspx"
+               
+               class="add_art" style="margin-left: 0%;">TRỞ LẠI CỬA HÀNG</a>
 
 
             <div class="bot_sig">
                 <input type="hidden" id="iUrlLogon"
                        value="https://www.massimodutti.com/webapp/wcs/stores/servlet/StaticLogonGuestUserView?catalogId=30220004&amp;urlToRedirect=https%3A%2F%2Fwww.massimodutti.com%2Fwebapp%2Fwcs%2Fstores%2Fservlet%2FOrderShippingPage%3FcatalogId%3D30220004%26langId%3D-1%26storeId%3D34009450&amp;goToShopCart=true&amp;langId=-1&amp;storeId=34009450&amp;processOrder=true">
-                <a id="botonContinuar" href="ShippingInformation.aspx">Tiếp tục Thanh Toán</a>
+                <a id="botonContinuar" href="OrderComplete.aspx">ĐẶT HÀNG</a>
             </div>
 
         </div>

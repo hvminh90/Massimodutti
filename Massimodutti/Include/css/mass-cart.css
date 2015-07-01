@@ -700,3 +700,45 @@ select.pCart-select-shipping{
     padding:10px 0;
     border-bottom:1px solid #B3B3B3;
 }
+
+#pCart-order-complete{
+    max-width:600px;
+    min-width:600px;
+    margin:0 auto;
+}
+
+#pCart-order-complete .back-shop{
+    font-size:12px;
+}
+#pCart-order-complete .back-shop a{
+    color:#000;
+}
+.pCart-order-complete-up{
+    padding-left:20px;
+}
+.pCart-order-complete-down{
+    margin-top:50px;
+    padding-left:30px;
+}
+.pCart-order-complete-up label,.pCart-order-complete-down label{
+    width:100%;
+    margin-bottom:10px;
+}
+.pCart-order-complete-up label.line, .pCart-order-complete-down label.line{
+        float:left;
+}
+.pCart-code-order-title{
+    margin-top:50px;
+}
+.pCart-code-order{
+    width:100px;
+    padding:3px 30px;
+    background:#a58d8d;
+    font-weight:bold;
+}
+.pCart-order-complete-down .top-20 {
+    margin-top: 20px;
+}
+.pCart-order-complete-down .bot-30{
+    margin-bottom:30px;
+}

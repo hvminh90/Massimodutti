@@ -1,6 +1,6 @@
 function initmap() {
         var map_options = {
-            center: new google.maps.LatLng(10.762448,106.690236),
+            center: new google.maps.LatLng(10.795937, 106.652387),
             zoom: 15,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
@@ -16,10 +16,10 @@ function initmap() {
         var y = [];
         var h = [];
 
-        t.push('Lộc Nhật Việt');
-        x.push(10.762448);
-        y.push(106.690236);
-        h.push('<p><strong>Lộc Nhật Việt</strong><br/>212Bis, Trần Hưng Đạo, Phường Nguyễn Cư Trinh, Quận 1, Hồ Chí Minh</p>');
+        t.push('Nhãn hàng thời trang QO');
+        x.push(10.795937);
+        y.push(106.652387);
+        h.push('<p><strong>Nhãn hàng thời trang QO</strong><br/>339/17A Nguyễn Thái Bình,Phường 12,Quận Tân Bình, Hồ Chí Minh</p>');
 
        
 
@@ -33,8 +33,19 @@ function initmap() {
                 html:      h[i]
             });
 
-            
+            //m.setTitle((i + 1).toString());
+            attachSecretMessage(m);
             i++;
+        }
+
+        function attachSecretMessage(marker) {
+            var infowindow = new google.maps.InfoWindow({
+                content: 'Nhãn hiệu thời trang QO'
+            });
+
+            google.maps.event.addListener(marker, 'click', function () {
+                infowindow.open(marker.get('map'), marker);
+            });
         }
     }
 

@@ -43,7 +43,7 @@
                         <%--<li class="separator account_sep">|</li>
                         <li class="account"><a href="javascript:void(0)">My Account</a></li>--%>
                         <li class="separator basket_sep">|</li>
-                        <li class="basket"><a href="#"><span class="basket-items-amount">0</span></a></li>
+                        <li class="basket"><a href="ShopingCart.aspx"><span class="basket-items-amount">0</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -146,7 +146,7 @@
             <div class="modalcont">
                 <div class="modalinner">
                     <form id="buscarTiendasForm" action="" method="post">
-                        <div class="modaltitle">SEARCH STORES</div>
+                        <div class="modaltitle">BẢN ĐỒ CỬA HÀNG</div>
                         <div class="modalscrollable">
                             <div id="shopmap">
                                 <div class="innermap">
@@ -162,38 +162,14 @@
                                 </div>
                             </div>
                             <div id="shopform">
-                                <div id="formfix">
+                                <div id="formfix" style="padding-left:20px;padding-right:20px;max-width:250px;">
                                     <p>
                                     </p>
-                                    <p class="mspot_storelocator">Enter a location, for example: a postcode, an address, a city.</p>
-                                    <p></p>
-                                    <hr>
-                                    <p>
-                                        <label for="pais">COUNTRY</label><br>
-                                    </p>
-                                    <div class="multidrop single required loaded" style="height: 30px; position: absolute; width: 100%">
-
-                                        <select id="pais" name="pais" title="pais" style="text-transform: capitalize; width: 100%;">
-
-                                            <option value="AL">Albania
-                                            </option>
-
-                                        </select>
-
-                                    </div>
-                                    <p></p>
-
-                                    <p style="padding-top: 35px">
-                                        <label for="pais">LOCATION</label><br>
-                                        <input id="ubicacion" name="ubicacion" type="text" value="" style="width: 100%"><br>
-                                        <span class="tip">Enter the city name</span><br>
-                                    </p>
-                                    <div class="boton3" id="buscarBtn">
-                                        <a href="javascript:void(0)" class="acc_butt">SEARCH</a>
-                                        <div style="visibility: hidden;">
-                                            <input type="submit"></div>
-                                        <!-- Para que al pulsar enter se envie el formulario -->
-                                    </div>
+                                    <p class="mspot_storelocator" style="font-size:15px;">Nhãn hàng thời trang QO.</p>
+                                    <p>339/17A Nguyễn Thái Bình, P.12, Quận Tân Bình, Tp.Hồ Chí Minh</p>
+                                    <p>DT: 0944 29 9091</p>
+                                    <p>Website: QO.com.vn</p>
+                                    <p>E-mail: QO.com.vn@gmail.com</p>
                                     <br>
                                     <br>
                                 </div>
