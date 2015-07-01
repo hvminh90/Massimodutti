@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Massimodutti.master.cs" Inherits="Massimodutti.Massimodutti" %>
-
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -24,6 +24,7 @@
     <link href="Include/css/mass-product.css" rel="stylesheet" />
     <link href="Include/css/mass-help.css" rel="stylesheet" />
     <link href="Include/css/mass-cart.css" rel="stylesheet" />
+   
 </head>
 <body>
 
@@ -39,13 +40,36 @@
                     <ul>
                         <li class="help"><a href="help.html">Yêu thích</a></li>
                         <li class="separator">|</li>
-                        <li class="contact"><a href="javascript:void(0)">Đăng nhập</a></li>
+                        <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="OpenModalDialog('LoginModal.aspx')" >Đăng nhập</a></li>
                         <%--<li class="separator account_sep">|</li>
                         <li class="account"><a href="javascript:void(0)">My Account</a></li>--%>
                         <li class="separator basket_sep">|</li>
                         <li class="basket"><a href="ShopingCart.aspx"><span class="basket-items-amount">0</span></a></li>
                     </ul>
                 </div>
+                   <%--<asp:Button ID="btn_open" runat="server" Text="Open Login page" CssClass="openModal" />
+                                    <div class="modal">
+                                    
+                                    <div class="modal-body">
+                                        <iframe style=" width:100%; height: 100%;" id="ifrm" src="LoginModal.aspx" runat="server"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                         <asp:Button ID="btn_close" runat="server" Text="OK" CssClass="modalOK close-modal" />
+                                    </div>
+                                </div>
+                                <div class="modal-backdrop"></div>--%>
+                <%--<asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
+                    <asp:Button ID="Button1" runat="server" Text="Fill Form in Popup" />
+
+                    <cc1:ModalPopupExtender ID="mp1" runat="server" PopupControlID="Panl1" TargetControlID="Button1"
+                        CancelControlID="Button2" BackgroundCssClass="Background">
+                    </cc1:ModalPopupExtender>
+                    <asp:Panel ID="Panl1" runat="server" CssClass="Popup" align="center" style = "display:none">
+                        <iframe style=" width: 350px; height: 300px;" id="irm1" src="LoginModal.aspx" runat="server"></iframe>
+                        <br/>
+                        <asp:Button ID="Button2" runat="server" Text="Close" />
+                </asp:Panel>--%>
             </div>
             <nav>
                 <div class="white-background">
@@ -141,6 +165,7 @@
         <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="Include/js/mass-map.js"></script>
         <script src="Include/js/mass-help.js"></script>
+        <script src="Include/js/mass-open-modal.js"></script>
         <div id="tiendas" class="modal_window" style="display: none;">
             <div class="modalbg"></div>
             <div class="modalcont">

@@ -38,6 +38,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30930.28736, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="aspsnippets.facebookapi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\aspsnippets.facebookapi.dll</HintPath>
@@ -157,9 +161,11 @@
     <Content Include="Include\js\mass-help.js" />
     <Content Include="Include\js\mass-map.js" />
     <Content Include="Include\js\mass-massimodutti.js" />
+    <Content Include="Include\js\mass-open-modal.js" />
     <Content Include="Include\js\mass-product.js" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="LoginModal.aspx" />
     <Content Include="Order.aspx" />
     <Content Include="OrderComplete.aspx" />
     <Content Include="Product.aspx" />
@@ -200,6 +206,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginModal.aspx.cs">
+      <DependentUpon>LoginModal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginModal.aspx.designer.cs">
+      <DependentUpon>LoginModal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Massimodutti.Master.cs">
       <DependentUpon>Massimodutti.Master</DependentUpon>

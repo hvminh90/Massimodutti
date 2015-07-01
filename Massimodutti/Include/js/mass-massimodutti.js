@@ -1,5 +1,7 @@
 $(function() {
-   // var header = $("header");
+    // var header = $("header");
+
+
     $(window).on('scroll', function() {
         if($(window).scrollTop() > 100){
             $('header').addClass('unfolded-header');
@@ -50,3 +52,4 @@ $(function() {
                                         $(this).find('span div').animate({ 'top': '46px' }, { duration: 500, queue: false });
                                     })
 });
+
