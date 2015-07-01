@@ -8,9 +8,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-    </div>
+        <div style="text-align: center">
+
+            <asp:Image ID="imgError" runat="server" ImageUrl="Include/images/accessdenied.jpeg" />
+
+        </div>
     </form>
 </body>
 </html>
