@@ -3,18 +3,362 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
+<head>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+
+    <title>MASSIMODUTTI</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=latin,latin-ext,cyrillic"
+        rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Lato:100,300,400,300italic,400italic" rel="stylesheet"
+        type="text/css" />
+
+    <link href="Include/css/mass-style.css" rel="stylesheet" />
+    <link href="Include/css/mass-index.css" rel="stylesheet" />
+    <link href="Include/css/mass-map.css" rel="stylesheet" />
 </head>
 <body>
+
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <header>
+            <div id="header-menu">
+                <div id="search">
+                    <form id="searchForm">
+                        <input type="text" id="search_text" name="search_text" placeholder="Search">
+                    </form>
+                </div>
+                <div id="general-menu">
+                    <ul>
+                        <li class="help"><a href="help.html">Help</a></li>
+                        <li class="separator">|</li>
+                        <li class="contact"><a href="javascript:void(0)">Contact</a></li>
+                        <li class="separator account_sep">|</li>
+                        <li class="account"><a href="javascript:void(0)">My Account</a></li>
+                        <li class="separator basket_sep">|</li>
+                        <li class="basket"><a href="#"><span class="basket-items-amount">0</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav>
+                <div class="white-background">
+                    <div id="logo">
+                        <a href="#"></a>
+                    </div>
+                    <div id="main-menu">
+                        <ul>
+                            <li>
+                                <a href="http://www.massimodutti.com/es/en/women/new-c1344507.html" data-id="1099011"
+                                    data-nameen="WOMEN">WOMEN</a>
+                            </li>
+                            <li>
+                                <a href="http://www.massimodutti.com/es/en/men/new-c891023.html" data-id="1099012"
+                                    data-nameen="MEN">MEN</a>
+                            </li>
+                            <li>
+                                <a href="http://www.massimodutti.com/es/en/boys-%26-girls/new-c913521.html" data-id="1099011"
+                                    data-nameen="BOYS &amp; GIRLS">BOYS &amp; GIRLS</a>
+                            </li>
+                            <li>
+                                <a href="#" data-id="1099011" data-nameen="LOOKBOOK">LOOKBOOK</a>
+                            </li>
+                            <li>
+                                <a href="#" data-id="1099011" data-nameen="CAMPAIGN">CAMPAIGN</a>
+                            </li>
+                            <li>
+                                <a href="http://social.massimodutti.com/editsandplaces/" data-id="1099011"
+                                    data-nameen="EDITS &amp; PLACES" target="_blank">EDITS &amp; PLACES</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="sub-menu" style="display: none; opacity: 1;">
+                    <div id="1099011" data-id="1099011" class="informatives" style="display: none;">
+                        <ul class="1099011-0" style="width: 25%;">
+                            <li class="informative-text"><a href="#" data-id="1370021" data-parent="1099011"
+                                data-nameen="Shop by">Shop by</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/new-c1344507.html" data-id="1344507"
+                                data-parent="1099011" data-nameen="New">New</a></li>
+                            <li style="margin: 0px;"><a href="http://www.massimodutti.com/es/en/women/indigo-c675004.html"
+                                data-id="675004" data-parent="1099011" data-nameen="Indigo
+">Indigo
+                        <span class="label-new-subcategory">NEW</span></a></li>
+                        </ul>
+                        <ul class="1099011-1" style="width: 25%;">
+                            <li class="informative-text"><a href="#" data-id="1370023" data-parent="1099011"
+                                data-nameen="Collection">Collection</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/jackets-c675009.html" data-id="675009"
+                                data-parent="1099011" data-nameen="Jackets">Jackets</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/leather-jackets-c675010.html" data-id="675010"
+                                data-parent="1099011" data-nameen="Leather jackets">Leather jackets</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/blazers-c675008.html" data-id="675008"
+                                data-parent="1099011" data-nameen="Blazers">Blazers</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/suits-c1383007.html" data-id="1383007"
+                                data-parent="1099011" data-nameen="Suits">Suits</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/dresses-c1349502.html" data-id="1349502"
+                                data-parent="1099011" data-nameen="Dresses">Dresses</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/skirts-c675013.html" data-id="675013"
+                                data-parent="1099011" data-nameen="Skirts">Skirts</a></li>
+                            <li style="margin: 0px;"><a
+                                href="http://www.massimodutti.com/es/en/women/sweaters-%26-cardigans-c675007.html"
+                                data-id="675007" data-parent="1099011" data-nameen="Sweaters &amp; Cardigans">Sweaters &amp;
+                        Cardigans</a></li>
+                        </ul>
+                        <ul class="1099011-2" style="width: 25%;">
+                            <li style="margin-top: 36px;"><a
+                                href="http://www.massimodutti.com/es/en/women/shirts-%26-blouses-c675005.html"
+                                data-id="675005" data-parent="1099011" data-nameen="Shirts &amp; Blouses">Shirts &amp;
+                        Blouses</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/t-shirts-c675006.html" data-id="675006"
+                                data-parent="1099011" data-nameen="T-shirts">T-shirts</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/trousers-c675011.html" data-id="675011"
+                                data-parent="1099011" data-nameen="Trousers">Trousers</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/denim-c675012.html" data-id="675012"
+                                data-parent="1099011" data-nameen="Denim">Denim</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/shoes-c675015.html" data-id="675015"
+                                data-parent="1099011" data-nameen="Shoes">Shoes</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/bags-%26-purses-c675016.html" data-id="675016"
+                                data-parent="1099011" data-nameen="Bags &amp; Purses">Bags &amp; Purses</a></li>
+                            <li style="margin: 0px;"><a href="http://www.massimodutti.com/es/en/women/accessories-c675014.html"
+                                data-id="675014" data-parent="1099011" data-nameen="Accessories">Accessories</a>
+                            </li>
+                        </ul>
+                        <ul class="1099011-3" style="width: 24%;">
+                            <li class="informative-text"><a href="#" data-id="1370027" data-parent="1099011"
+                                data-nameen="Limited Editions">Limited Editions</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/the-equestrian-c1337011.html" data-id="1337011"
+                                data-parent="1099011" data-nameen="THE EQUESTRIAN">THE EQUESTRIAN</a></li>
+                            <li style="margin: 0px;"><a
+                                href="http://www.massimodutti.com/es/en/women/nyc-limited-edition-c1319008.html"
+                                data-id="1319008" data-parent="1099011" data-nameen="NYC LIMITED EDITION">NYC LIMITED
+                        EDITION</a></li>
+                        </ul>
+                    </div>
+                    <div id="1099012" data-id="1099012" class="informatives" style="display: none">
+                        <ul class="1099011-0" style="width: 25%;">
+                            <li class="informative-text"><a href="#" data-id="1370021" data-parent="1099011"
+                                data-nameen="Shop by">Shop by123123</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/new-c1344507.html" data-id="1344507"
+                                data-parent="1099011" data-nameen="New">New</a></li>
+                            <li style="margin: 0px;"><a href="http://www.massimodutti.com/es/en/women/indigo-c675004.html"
+                                data-id="675004" data-parent="1099011" data-nameen="Indigo
+">Indigo
+                        <span class="label-new-subcategory">NEW</span></a></li>
+                        </ul>
+                        <ul class="1099011-1" style="width: 25%;">
+                            <li class="informative-text"><a href="#" data-id="1370023" data-parent="1099011"
+                                data-nameen="Collection">Collection</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/jackets-c675009.html" data-id="675009"
+                                data-parent="1099011" data-nameen="Jackets">Jackets</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/leather-jackets-c675010.html" data-id="675010"
+                                data-parent="1099011" data-nameen="Leather jackets">Leather jackets</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/blazers-c675008.html" data-id="675008"
+                                data-parent="1099011" data-nameen="Blazers">Blazers</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/suits-c1383007.html" data-id="1383007"
+                                data-parent="1099011" data-nameen="Suits">Suits</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/dresses-c1349502.html" data-id="1349502"
+                                data-parent="1099011" data-nameen="Dresses">Dresses</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/skirts-c675013.html" data-id="675013"
+                                data-parent="1099011" data-nameen="Skirts">Skirts</a></li>
+                            <li style="margin: 0px;"><a
+                                href="http://www.massimodutti.com/es/en/women/sweaters-%26-cardigans-c675007.html"
+                                data-id="675007" data-parent="1099011" data-nameen="Sweaters &amp; Cardigans">Sweaters &amp;
+                        Cardigans</a></li>
+                        </ul>
+                        <ul class="1099011-2" style="width: 25%;">
+                            <li style="margin-top: 36px;"><a
+                                href="http://www.massimodutti.com/es/en/women/shirts-%26-blouses-c675005.html"
+                                data-id="675005" data-parent="1099011" data-nameen="Shirts &amp; Blouses">Shirts &amp;
+                        Blouses</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/t-shirts-c675006.html" data-id="675006"
+                                data-parent="1099011" data-nameen="T-shirts">T-shirts</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/trousers-c675011.html" data-id="675011"
+                                data-parent="1099011" data-nameen="Trousers">Trousers</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/denim-c675012.html" data-id="675012"
+                                data-parent="1099011" data-nameen="Denim">Denim</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/shoes-c675015.html" data-id="675015"
+                                data-parent="1099011" data-nameen="Shoes">Shoes</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/bags-%26-purses-c675016.html" data-id="675016"
+                                data-parent="1099011" data-nameen="Bags &amp; Purses">Bags &amp; Purses</a></li>
+                            <li style="margin: 0px;"><a href="http://www.massimodutti.com/es/en/women/accessories-c675014.html"
+                                data-id="675014" data-parent="1099011" data-nameen="Accessories">Accessories</a>
+                            </li>
+                        </ul>
+                        <ul class="1099011-3" style="width: 24%;">
+                            <li class="informative-text"><a href="#" data-id="1370027" data-parent="1099011"
+                                data-nameen="Limited Editions">Limited Editions</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/the-equestrian-c1337011.html" data-id="1337011"
+                                data-parent="1099011" data-nameen="THE EQUESTRIAN">THE EQUESTRIAN</a></li>
+                            <li style="margin: 0px;"><a
+                                href="http://www.massimodutti.com/es/en/women/nyc-limited-edition-c1319008.html"
+                                data-id="1319008" data-parent="1099011" data-nameen="NYC LIMITED EDITION">NYC LIMITED
+                        EDITION</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="iPageContent">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+        <footer style="opacity: 1;">
+            <!-- Begin ItxContentSpotDisplay.jsp  (MD2_ESpot_FOOTER) -->
+            <div id="footer-top">
+                <div class="footer-top-background">
+                    <ul>
+                        <li class="new-apps"><a href="http://www.massimodutti.com/webapp/wcs/stores/servlet/ItxStandardNewAppsPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">APPS<div></div>
+                        </a></li>
+                        <li style="" class="gift-card"><a href="http://www.massimodutti.com/es/en/c450002.html">GIFT CARD<div></div>
+                        </a></li>
+                        <li class="shops"><a href="javascript:void(0)" onclick="showMap();">STORES<div></div>
+                        </a></li>
+                        <li style="border-right-style: none;"><span style="padding: 19px 0px;">NEWSLETTER</span><div style="top: 46px;">
+                            <form id="newsletter-form" action="http://www.massimodutti.com/webapp/wcs/stores/servlet/NewsletterPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">
+                                <input id="newsletter" name="newsletter" type="text" placeholder="Please write your email * ">
+                            </form>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer-bottom">
+                <div id="footer-menu">
+                    <ul>
+
+                        <li><a href="http://social.massimodutti.com/editsandplaces/" target="_blank">Edits&amp;Places</a></li>
+                        <li class="separator">|</li>
+                        <li class="politicacookiesFooter"><a href="http://static.massimodutti.net/3/static2/pdf/cookie_policy/cookie_policy-1.pdf?20150628044000" target="_blank">Cookie policy</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="http://www.massimodutti.com/webapp/wcs/stores/servlet/NewsletterPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">Newsletter</a></li>
+                        <li class="separator">|</li>
+                        <li class="empresaFooter"><a href="http://www.massimodutti.com/webapp/wcs/stores/servlet/ItxStandardCompanyPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">Company</a></li>
+                        <li class="separator">|</li>
+                        <li class="joinfashionFooter"><a target="_blank" href="http://www.joinfashioninditex.com/joinfashion">Join Fashion</a></li>
+                        <li class="separator">|</li>
+                        <li class="ayudaFooter no-border-right"><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div id="social-menu">
+                    <div class="label">Follow us</div>
+                    <ul>
+                        <li class="icono last"><a class="tw" href="http://twitter.com/massimodutti" target="_blank"></a></li>
+                        <li class="icono last"><a class="fb" href="http://www.facebook.com/MassimoDuttiOfficial" target="_blank"></a></li>
+                        <li class="icono last"><a class="yb" href="http://www.youtube.com/user/MassimoDuttiOfficial" target="_blank"></a></li>
+                        <li class="icono last"><a class="ic" href="http://pinterest.com/massimodutti" target="_blank"></a></li>
+                        <li class="icono last"><a class="in" href="http://www.instagram.com/massimodutti" target="_blank"></a></li>
+                        <!--  <li class="icono last"><a class="tb" href="http://massimoduttiofficial.tumblr.com/" target="_blank"></a></li> -->
+                        <li style="display: none;" class="icono last china"><a class="wb" href="http://www.weibo.com/massimodutti/" target="_blank"></a></li>
+                        <li style="display: none;" class="icono last china"><a class="yk" href="http://u.youku.com/user_show/uid_MassimoDutti1985/" target="_blank" style="margin: 0px;"></a></li>
+                        <!-- <li style="display:none;" class="icono last rusia"><a class="vk" href="http://vk.com/massimodutti/" target="_blank"></a></li> -->
+                    </ul>
+                </div>
+                <div id="change-country">
+                    <ul>
+                        <li class="cambiarpaisFooter no-border-right"><a href="#">Change country</a></li>
+                    </ul>
+                </div>
+                <div id="change-language-menu">
+                    <ul>
+                        <li><a href="http://www.massimodutti.com/es/es/women/new-c1344507.html" lang="es">Español</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="http://www.massimodutti.com/es/ca/women/new-c1344507.html" lang="ca">Català</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="http://www.massimodutti.com/es/gl/women/new-c1344507.html" lang="gl">Galego</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="http://www.massimodutti.com/es/eu/women/new-c1344507.html" lang="eu">Euskara</a></li>
+                        <li class="separator">|</li>
+                        <li class="no-rollover active no-border-right">English</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+        </footer>
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+        <script src="Include/js/mass-massimodutti.js"></script>
+        <script type="Include/text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="Include/js/mass-map.js"></script>
+
+        <div id="tiendas" class="modal_window" style="display: none;">
+            <div class="modalbg"></div>
+            <div class="modalcont">
+                <div class="modalinner">
+                    <form id="buscarTiendasForm" action="" method="post">
+                        <div class="modaltitle">SEARCH STORES</div>
+                        <div class="modalscrollable">
+                            <div id="shopmap">
+                                <div class="innermap">
+                                    <div id="map">
+                                        <div id="mapa_tooltip" class="mapa_tooltip">
+                                            <a id="tooltipClose" class="close_modal" href="javascript:void(0)"></a>
+
+                                            <p id="mCalle">&nbsp;</p>
+                                            <p id="mCp">&nbsp; &nbsp;</p>
+                                            <p id="mSeccion">&nbsp;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="shopform">
+                                <div id="formfix">
+                                    <p>
+                                    </p>
+                                    <p class="mspot_storelocator">Enter a location, for example: a postcode, an address, a city.</p>
+                                    <p></p>
+                                    <hr>
+                                    <p>
+                                        <label for="pais">COUNTRY</label><br>
+                                    </p>
+                                    <div class="multidrop single required loaded" style="height: 30px; position: absolute; width: 100%">
+
+                                        <select id="pais" name="pais" title="pais" style="text-transform: capitalize; width: 100%;">
+
+                                            <option value="AL">Albania
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+                                    <p></p>
+
+                                    <p style="padding-top: 35px">
+                                        <label for="pais">LOCATION</label><br>
+                                        <input id="ubicacion" name="ubicacion" type="text" value="" style="width: 100%"><br>
+                                        <span class="tip">Enter the city name</span><br>
+                                    </p>
+                                    <div class="boton3" id="buscarBtn">
+                                        <a href="javascript:void(0)" class="acc_butt">SEARCH</a>
+                                        <div style="visibility: hidden;">
+                                            <input type="submit">
+                                        </div>
+                                        <!-- Para que al pulsar enter se envie el formulario -->
+                                    </div>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <a class="modalclose" onclick="closeMap();"></a>
+            </div>
+        </div>
+
+
+
+
+
     </form>
 </body>
 </html>

@@ -57,6 +57,72 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Include\css\mass-cart.css" />
+    <Content Include="Include\css\mass-fonts.css" />
+    <Content Include="Include\css\mass-help.css" />
+    <Content Include="Include\css\mass-index.css" />
+    <Content Include="Include\css\mass-map.css" />
+    <Content Include="Include\css\mass-product.css" />
+    <Content Include="Include\css\mass-style.css" />
+    <Content Include="Include\images\common\logo_MD.png" />
+    <Content Include="Include\images\companyPage\dropdown-open.png" />
+    <Content Include="Include\images\companyPage\dropdown.png" />
+    <Content Include="Include\images\companyPage\menu-active.png" />
+    <Content Include="Include\images\detail\back_to_top.png" />
+    <Content Include="Include\images\detail\icons\booking_icon.png" />
+    <Content Include="Include\images\detail\icons\display_icon.png" />
+    <Content Include="Include\images\detail\icons\goback_icon.png" />
+    <Content Include="Include\images\detail\icons\next_product.png" />
+    <Content Include="Include\images\detail\icons\search.png" />
+    <Content Include="Include\images\detail\icons\share_email_icon_r %281%29.png" />
+    <Content Include="Include\images\detail\icons\share_email_icon_r.png" />
+    <Content Include="Include\images\detail\icons\share_facebook.png" />
+    <Content Include="Include\images\detail\icons\share_facebook_icon_r %281%29.png" />
+    <Content Include="Include\images\detail\icons\share_facebook_icon_r.png" />
+    <Content Include="Include\images\detail\icons\share_instagram.png" />
+    <Content Include="Include\images\detail\icons\share_pinterest.png" />
+    <Content Include="Include\images\detail\icons\share_pinterest_icon_r.png" />
+    <Content Include="Include\images\detail\icons\share_twitter.png" />
+    <Content Include="Include\images\detail\icons\share_twitter_icon_r.png" />
+    <Content Include="Include\images\detail\icons\share_youtube.png" />
+    <Content Include="Include\images\detail\icons\size_guide_tooltip_bottom.png" />
+    <Content Include="Include\images\detail\icons\tiendas.png" />
+    <Content Include="Include\images\detail\icons\zoomin.cur" />
+    <Content Include="Include\images\detail\icons\zoomin.png" />
+    <Content Include="Include\images\footer\apps.png" />
+    <Content Include="Include\images\footer\share_facebook.png" />
+    <Content Include="Include\images\footer\share_instagram.png" />
+    <Content Include="Include\images\footer\share_pinterest.png" />
+    <Content Include="Include\images\footer\share_twitter.png" />
+    <Content Include="Include\images\footer\share_youtube.png" />
+    <Content Include="Include\images\footer\tarjetaregalo.png" />
+    <Content Include="Include\images\footer\tiendas.png" />
+    <Content Include="Include\images\header\basket.png" />
+    <Content Include="Include\images\header\search.png" />
+    <Content Include="Include\images\mapIcon\b_g.png" />
+    <Content Include="Include\images\mapIcon\close_news.png" />
+    <Content Include="Include\images\pasos\cruz.png" />
+    <Content Include="Include\images\pasos\paso1_hover.png" />
+    <Content Include="Include\images\pasos\paso1_normal.png" />
+    <Content Include="Include\images\pasos\paso2_hover.png" />
+    <Content Include="Include\images\pasos\paso2_normal.png" />
+    <Content Include="Include\images\pasos\paso3_hover.png" />
+    <Content Include="Include\images\pasos\paso3_normal.png" />
+    <Content Include="Include\images\pasos\paso4_hover.png" />
+    <Content Include="Include\images\pasos\paso4_normal.png" />
+    <Content Include="Include\images\pasos\paso5_hover.png" />
+    <Content Include="Include\images\pasos\paso5_normal.png" />
+    <Content Include="Include\images\pasos\radioOff.png" />
+    <Content Include="Include\images\pasos\radioOn.png" />
+    <Content Include="Include\images\pasos\right_arrow.png" />
+    <Content Include="Include\images\product\5041553802_1_1_17.jpg" />
+    <Content Include="Include\images\product\5041553802_2_3_17.jpg" />
+    <Content Include="Include\js\gm-js-1.js" />
+    <Content Include="Include\js\mass-help.js" />
+    <Content Include="Include\js\mass-map.js" />
+    <Content Include="Include\js\mass-massimodutti.js" />
+    <Content Include="Include\js\mass-product.js" />
+    <Content Include="Index.aspx" />
     <Content Include="Warring.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -64,6 +130,13 @@
     <Content Include="App_Code\Core.cs" />
     <Content Include="App_Code\Product.cs" />
     <Content Include="App_Code\SessionDataSource.cs" />
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Massimodutti.Master.cs">
       <DependentUpon>Massimodutti.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -82,6 +155,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Massimodutti.Master" />
+    <Content Include="Include\fonts\CrimsonText-Roman.eot" />
+    <Content Include="Include\fonts\CrimsonText-Roman.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -89,12 +164,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Include\css\" />
-    <Folder Include="Include\fonts\" />
-    <Folder Include="Include\images\" />
-    <Folder Include="Include\js\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
