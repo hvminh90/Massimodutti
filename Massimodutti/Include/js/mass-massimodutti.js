@@ -36,17 +36,17 @@ $(function() {
     
     $('#footer-top div ul li').mouseenter(function () {
        
-        $(this).animate({ top: "25px" });
-            $(this).find('a div').animate({ 'margin-top': '6px', 'opacity': '1' });
-            $(this).find('span').animate({ 'padding': '13px 0' });
-            $(this).find('span div').animate({ 'top': '34px' });
+        $(this).animate({ "opacity": "show", top: "25" }, { duration: 500, queue: false });//animate({ top: "25px" }, 1000, 'linear');
+        $(this).find('a div').animate({ 'margin-top': '6px', 'opacity': '1' }, { duration: 500, queue: false });
+            $(this).find('span').animate({ 'padding': '13px 0' }, { duration: 500, queue: false });
+            $(this).find('span div').animate({ 'top': '34px' }, { duration: 500, queue: false });
 
     });
     $('#footer-top div ul li').mouseleave(
                                     function() {
-                                        $(this).animate({ top: "50px" });
-                                        $(this).find('a div').animate({'margin-top':'19px','opacity':'0'});
-                                        $(this).find('span').animate({'padding':'19px 0'});
-                                        $(this).find('span div').animate({'top':'46px'});
+                                        $(this).animate({ top: "50px" }, { duration: 500, queue: false });
+                                        $(this).find('a div').animate({ 'margin-top': '19px', 'opacity': '0' }, { duration: 500, queue: false });
+                                        $(this).find('span').animate({ 'padding': '19px 0' }, { duration: 500, queue: false });
+                                        $(this).find('span div').animate({ 'top': '46px' }, { duration: 500, queue: false });
                                     })
 });
