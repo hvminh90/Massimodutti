@@ -55,8 +55,8 @@
                                     </td>
 
                                     <td class="center">
-                                        <div class="contadores">
-                                            <asp:ImageButton ID="imgbtnSubtract" runat="server" ImageUrl="Include/images/common/ico_menos.png" CssClass="eliminar" CommandName="cmdSubtract" />
+                                        <div class="contadores" style="width:100px !important">
+                                            <asp:ImageButton ID="imgbtnSubtract" runat="server" ImageUrl="Include/images/common/ico_menos.png" CssClass="eliminar" CommandName="cmdSubtract" style="margin-top:5px !important;width:10px;border:none"/>
                                             <%--<a
                                                 
                                                 onclick="updateCantidadProd('https://www.massimodutti.com/webapp/wcs/stores/servlet/ItxOrderManageCmd?viewname=ShopCartJSON&amp;catalogId=30220004&amp;action=updateItem&amp;errorViewName=ShopCartJSON&amp;orderId=58244596&amp;langId=-1&amp;quantity=0&amp;orderItemId=165121251&amp;storeId=34009450'); trackingCambiarCantidad(1,'Cesta_de_Compra',0,'decrementar');"
@@ -72,7 +72,7 @@
                                                 <img
                                                     src="https://static.massimodutti.net/3/static2/img/ico_mas.png" class="mas">
                                             </a>--%>
-                                            <asp:ImageButton ID="imgbtnAdd" runat="server" ImageUrl="Include/images/common//ico_mas.png" CssClass="aniadir" CommandName="cmdAdd" />
+                                            <asp:ImageButton ID="imgbtnAdd" runat="server" ImageUrl="Include/images/common//ico_mas.png" CssClass="aniadir" CommandName="cmdAdd"  style="margin-top:5px !important;width:10px;border:none"/>
                                         </div>
                                     </td>
                                     <td class="right">
