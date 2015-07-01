@@ -13,6 +13,48 @@ namespace Massimodutti.App_Code
         private string quantityPerUnit;
         private decimal unitPrice;
         private int units;
+        private string size;
+        private decimal totalPrice;
+        private decimal totalcost;
+
+        public decimal Totalcost
+        {
+            get { return totalcost; }
+            set { totalcost = value; }
+        }
+
+        public decimal TotalPrice
+        {
+            get { return totalPrice; }
+            set { totalPrice = value; }
+        }
+        public string Size
+        {
+            get { return size; }
+            set { size = value; }
+        }
+        private string color;
+
+        public string Color
+        {
+            get { return color; }
+            set { color = value; }
+        }
+        private string imgname;
+
+        public string Imgname
+        {
+            get { return imgname; }
+            set { imgname = value; }
+        }
+        private string imgtype;
+
+        public string Imgtype
+        {
+            get { return imgtype; }
+            set { imgtype = value; }
+        }
+
 
         public string ProductId
         {
@@ -44,13 +86,20 @@ namespace Massimodutti.App_Code
             set { this.units = value; }
         }
 
-        public Product(string productId, string productName, string quantityPerUnit, decimal unitPrice, int units)
+       
+        public Product(string productId, string productName, string quantityPerUnit, decimal unitPrice, int units,
+            string color,string size,string imgname,string imgtype, decimal totalprice)
         {
             this.productId = productId;
             this.productName = productName;
             this.quantityPerUnit = quantityPerUnit;
             this.unitPrice = unitPrice;
             this.units = units;
+            this.color = color;
+            this.size = size;
+            this.imgname = imgname;
+            this.imgtype = imgtype;
+            this.totalPrice = totalprice;
         }
 
         public Product()
@@ -68,7 +117,11 @@ namespace Massimodutti.App_Code
                 newProduct.QuantityPerUnit = itemValues["QuantityPerUnit"].ToString();
                 newProduct.UnitPrice = decimal.Parse(itemValues["UnitPrice"].ToString(), System.Globalization.NumberStyles.AllowCurrencySymbol | System.Globalization.NumberStyles.AllowDecimalPoint);
                 newProduct.Units = 1;
-
+                newProduct.Color = itemValues["Color"].ToString();
+                newProduct.Size = itemValues["Size"].ToString();
+                newProduct.Imgname = itemValues["ImgName"].ToString();
+                newProduct.Imgtype = itemValues["ImgType"].ToString();
+                newProduct.TotalPrice = 1 * decimal.Parse(itemValues["UnitPrice"].ToString(), System.Globalization.NumberStyles.AllowCurrencySymbol | System.Globalization.NumberStyles.AllowDecimalPoint);
                 IList<Product> list = ProductsInCart;
                 list.Add(newProduct);
             }
@@ -82,6 +135,7 @@ namespace Massimodutti.App_Code
                 if (list[i].ProductId == productID)
                 {
                     list[i].Units += 1;
+                    list[i].TotalPrice = list[i].Units * list[i].UnitPrice;
                     isExist = true;
                     break;
                 }

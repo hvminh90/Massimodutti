@@ -26,45 +26,48 @@ namespace Massimodutti
                     Response.Redirect("Warring.aspx");
                 }
                 ProductId = id;
-                //rptProduct.DataSource = CHITIET(id);
-                //rptProduct.DataBind();
-            }
-            //foreach (RepeaterItem ritem in rptProduct.Items)
-            //{
-            //    Button btn = ritem.FindControl("btn_Add_to_cart") as Button;
-            //    btn.Click += new EventHandler(btn_Click);
-            //}
+            }   
         }
         protected void rptProduct_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('@@@');", true);
             if (e.CommandName == "cmd_Add_to_cart")
             {
-                Int32 id = Convert.ToInt32(e.CommandArgument);
-
+                //Int32 id = Convert.ToInt32(e.CommandArgument);
+                string productid = (string)e.CommandArgument;
+                var tbChiTiet = CHITIET(productid);
+                var tbImg = IMAGE(productid);
+                
 
                 IDictionary itemValues = new Dictionary<object, object>();
-                itemValues["ProductID"] = ProductId;
-                itemValues["ProductName"] = ProductName;
-                itemValues["UnitPrice"] = Price;
-                itemValues["QuantityPerUnit"] = "1";
+                itemValues["ProductID"] = productid;
+                itemValues["ProductName"] = tbChiTiet.Rows.Count > 0 ? tbChiTiet.Rows[0]["PRODUCTNAME"].ToString() : string.Empty;
+                if (tbChiTiet.Rows.Count > 0)
+                {
+                    if (tbChiTiet.Rows[0]["SALE"].ToString() == "0")
+                        itemValues["UnitPrice"] = tbChiTiet.Rows[0]["PRICE"].ToString();
+                    else itemValues["UnitPrice"] = tbChiTiet.Rows[0]["SALE"].ToString();
+                }
+                else itemValues["UnitPrice"] = 0;
+
+                //itemValues["UnitPrice"] = tbChiTiet.Rows.Count > 0 ? tbChiTiet.Rows[0]["PRICE"].ToString() : "0";
+                itemValues["QuantityPerUnit"] = "";
+                itemValues["Size"] = "XL";
+                itemValues["Color"] = "RED";
+                itemValues["ImgName"] = tbImg.Rows.Count > 0 ? tbImg.Rows[0]["IMAGE_NAME"].ToString() : "1";
+                itemValues["ImgType"] = tbImg.Rows.Count > 0 ? tbImg.Rows[0]["IMAGE_TYPE"].ToString() : ".jpg";
+                itemValues["TotalPrice"] = tbChiTiet.Rows.Count > 0 ? tbChiTiet.Rows[0]["PRICE"].ToString() : "0";
                 App_Code.Product.AddProductToTheCart(itemValues);
                 Response.Redirect("ShopingCart.aspx");
                 
 
             }
         }
-        //void btn_Click(object sender, EventArgs e)
-        //{
-        //    Button btn = (Button)sender;
-        //    RepeaterItem ritem = (RepeaterItem)btn.NamingContainer;
-        //    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('@@@');", true);
-        //}
+        
         #region Binding
         protected DataTable CHITIET(string productid)
         {
             return App_Code.Core.GetDataTable(
-                 @"SELECT * FROM [PRODUCT] WHERE [PRODUCTID] = " + productid);
+                 @"SELECT PRODUCTID, ISNULL(PRODUCTNAME,'') as PRODUCTNAME, ISNULL(PRICE,0) as PRICE,ISNULL(SALE,0) as SALE FROM [PRODUCT] WHERE [PRODUCTID] = " + productid);
         }
         protected DataTable COLOUR(string productid)
         {
@@ -91,16 +94,5 @@ namespace Massimodutti
                 WHERE PRODUCT.PRODUCTID =" + productid);
         }
         #endregion
-
-        //protected void btn_Add_to_cart_Click(object sender, EventArgs e)
-        //{
-        //    IDictionary itemValues = new Dictionary<object, object>();
-        //    itemValues["ProductID"] = ProductId;
-        //    itemValues["ProductName"] = ProductName;
-        //    itemValues["UnitPrice"] = Price;
-        //    itemValues["QuantityPerUnit"] = "1";
-        //    App_Code.Product.AddProductToTheCart(itemValues);
-        //    Response.Redirect("ShopingCart.aspx");
-        //}
     }
 }

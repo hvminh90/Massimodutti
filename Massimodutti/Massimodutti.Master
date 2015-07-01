@@ -32,9 +32,9 @@
         <header>
             <div id="header-menu">
                 <div id="search">
-                    <form id="searchForm">
+                    <%--<form id="searchForm">--%>
                         <input type="text" id="search_text" name="search_text" placeholder="Từ khóa tìm kiếm">
-                    </form>
+                    <%--</form>--%>
                 </div>
                 <div id="general-menu">
                     <ul>
@@ -110,7 +110,8 @@
             <div id="footer-top">
 	            <div class="footer-top-background">
 		            <ul>
-			            <li class="new-apps"><a href="http://www.massimodutti.com/webapp/wcs/stores/servlet/ItxStandardNewAppsPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">BLOG<div></div></a></li><li class="shops"><a href="javascript:void(0)" onclick="openModal('ModalMap.aspx',{'width':'90%'});">CỬA HÀNG<div></div></a> </li><li style="border-right-style: none;"><span style="padding: 19px 0px;">TIN TỨC</span><div style="top: 46px;"><form id="newsletter-form" action="http://www.massimodutti.com/webapp/wcs/stores/servlet/NewsletterPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450"><input id="newsletter" name="newsletter" type="text" placeholder="Xin nhập email * "></form></div></li></ul>
+			            <li class="new-apps"><a href="http://www.massimodutti.com/webapp/wcs/stores/servlet/ItxStandardNewAppsPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">BLOG<div></div></a></li><li class="shops"><a href="javascript:void(0)" onclick="showMap();">CỬA HÀNG<div></div></a> </li><li style="border-right-style: none;"><span style="padding: 19px 0px;">TIN TỨC</span><div style="top: 46px;"><%--<form id="newsletter-form" action="http://www.massimodutti.com/webapp/wcs/stores/servlet/NewsletterPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">--%><input id="newsletter" name="newsletter" type="text" placeholder="Xin nhập email * "><%--</form>--%></div></li></ul>
+
 	            </div>
             </div>
             <div id="footer-bottom">
@@ -168,11 +169,46 @@
         <script src="Include/js/mass-map.js"></script>
         <script src="Include/js/mass-help.js"></script>
         <script src="Include/js/mass-open-modal.js"></script>
-        <script src="Include/js/mass-product.js"></script>
-        <div id="tiendas" class="modal_window" style="display: none">
-           
-                
-                
+
+        <div id="tiendas" class="modal_window" style="display: none;">
+            <div class="modalbg"></div>
+            <div class="modalcont">
+                <div class="modalinner">
+                    <%--<form id="buscarTiendasForm" action="" method="post">--%>
+                        <div class="modaltitle">BẢN ĐỒ CỬA HÀNG</div>
+                        <div class="modalscrollable">
+                            <div id="shopmap">
+                                <div class="innermap">
+                                    <div id="map">
+                                        <div id="mapa_tooltip" class="mapa_tooltip">
+                                            <a id="tooltipClose" class="close_modal" href="javascript:void(0)"></a>
+
+                                            <p id="mCalle">&nbsp;</p>
+                                            <p id="mCp">&nbsp; &nbsp;</p>
+                                            <p id="mSeccion">&nbsp;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="shopform">
+                                <div id="formfix" style="padding-left:20px;padding-right:20px;max-width:250px;">
+                                    <p>
+                                    </p>
+                                    <p class="mspot_storelocator" style="font-size:15px;">Nhãn hàng thời trang QO.</p>
+                                    <p>339/17A Nguyễn Thái Bình, P.12, Quận Tân Bình, Tp.Hồ Chí Minh</p>
+                                    <p>DT: 0944 29 9091</p>
+                                    <p>Website: QO.com.vn</p>
+                                    <p>E-mail: QO.com.vn@gmail.com</p>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    <%--</form>--%>
+
+                </div>
+                <a class="modalclose" onclick="closeMap();"></a>
+
             </div>
         </div>
 
