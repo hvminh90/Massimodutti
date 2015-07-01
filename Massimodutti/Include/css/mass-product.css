@@ -1,0 +1,1070 @@
+html {
+	overflow-y: scroll;
+}
+
+ body {
+	background: #fff;
+}
+ #footer {
+	display: none;
+}
+.lt-ie9 #iPageContent .overlay {
+	background: url(../images/common/b_g_w.png);
+}
+.lt-ie9 #menu-containter #menu {
+	background: url(../images/common/b_g_w.png);
+}
+ #iPageContent form input[type=text], #iPageContent form input[type=email], #iPageContent form textarea {
+	border: 1px solid #d3d4d4;
+	background-color: #fff!important;
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-style: italic;
+	color: #505252;
+	font-size: 14px;
+	width: 100%;
+	display: block;
+	padding: 7px 9px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 8px 0;
+	outline: 0;
+}
+ #iPageContent form textarea {
+	height: 100px;
+}
+ #iPageContent form .error {
+	border-color: #d15b52!important;
+}
+ #iPageContent form .legal_check {
+	margin-top: 15px;
+}
+ #iPageContent form .legal_check input[type=checkbox] {
+	width: auto;
+	display: inline-block;
+}
+ #iPageContent form .legal_check input[type=checkbox].error {
+	outline: 1px solid #d15b52;
+}
+ #iPageContent form .legal_check span.legal_label {
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	display: inline-block;
+	margin-left: 3px;
+}
+ #iPageContent form .legal_check span.legal_label a {
+	color: #505252;
+	text-decoration: underline;
+}
+ #menu-containter {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+ #menu-containter #menu-action-area {
+	position: absolute;
+	top: 92px;
+	left: 31px;
+	width: 185px;
+	height: 185px;
+	display: block;
+	background: url(../images/common/transparent.png);
+}
+ #menu-containter #menu-action-area #menu-icon {
+	background-image: url(../images/detail/icons/menu_icon.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	display: block;
+	width: 20px;
+	height: 0;
+	padding-top: 10px;
+	overflow: hidden;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+ #menu-containter #menu {
+	display: none;
+	left: 18px;
+	background: rgba(255,255,255,.8);
+	width: 210px;
+}
+ #menu-containter #menu>ul {
+	margin: 17px;
+}
+.desktop #iPageContent {
+;
+}
+.desktop #iPageContent .popup .popup-content .size-list.bundle li.selected:hover {
+	border: 1px solid #505252;
+	background-color: #fff;
+	color: #505252;
+}
+.desktop #iPageContent .size-list li:hover {
+	border: 1px solid #505252;
+}
+ #iPageContent {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 700;
+	position: relative;
+	min-width: 1024px;
+}
+ #iPageContent button.white {
+	border: 1px solid #d3d4d4;
+	background-color: #fff;
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	color: #505252;
+	outline: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 12px;
+	padding: 5px 20px;
+	font-weight: 300;
+	text-align: center;
+}
+ #iPageContent button.white:hover {
+	background-color: #505252;
+	color: #fff;
+	border: 1px solid #505252;
+}
+ #iPageContent button.black, #iPageContent input[type=submit] {
+	border: 0;
+	outline: 0;
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 12px;
+	padding: 5px 32px;
+	line-height: 13px;
+	padding: 11px 32px;
+	display: block;
+	text-align: center;
+	min-width: 260px;
+	margin: 10px auto;
+	font-style: normal;
+	width: auto;
+}
+ #iPageContent button.black:hover, #iPageContent input[type=submit]:hover {
+	background-color: #505252;
+}
+ #iPageContent .overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	background: rgba(255,255,255,.6);
+	display: none;
+}
+ #iPageContent .popup {
+	position: fixed;
+	top: 50%;
+	z-index: 10;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	background-color: #fff;
+	border: 1px solid #d3d4d4;
+	width: 600px;
+	color: #505252;
+	display: none;
+}
+ #iPageContent .popup .popup-content {
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+ #iPageContent .popup .popup-content .product {
+	margin-top: 20px;
+}
+ #iPageContent .popup .popup-content .size-list {
+	text-align: center;
+	margin: 20px 0 26px;
+}
+ #iPageContent .popup .popup-content .size-list.bundle {
+	margin: 10px 0;
+}
+ #iPageContent .popup .popup-content #size_guide {
+	margin-bottom: 60px;
+}
+ #iPageContent .popup .popup-content h4 {
+	font-family: 'Playfair Display',Georgia,serif;
+	font-size: 17px;
+	font-weight: 700;
+	margin: 40px 0 15px;
+	text-align: center;
+}
+ #iPageContent .popup .popup-content h5 {
+	font-family: 'Playfair Display',Georgia,serif;
+	font-size: 15px;
+	font-weight: 700;
+	margin: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+ #iPageContent .popup .popup-content hr {
+	border-top: 1px solid #d3d4d4;
+	width: 100%;
+	margin: 0 auto;
+}
+ #iPageContent .popup .popup-content hr.short {
+	width: 20%;
+}
+ #iPageContent .popup .popup-content p {
+	font-family: 'Playfair Display',Georgia,serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 22px;
+	margin: 25px 0;
+}
+ #iPageContent .popup .popup-content p.message {
+	margin: 65px 0 35px;
+}
+ #iPageContent .popup .popup-content button.message {
+	margin-bottom: 30px;
+}
+ #iPageContent .popup .close {
+	width: 14px;
+	height: 14px;
+	background-image: url(../images/detail/icons/close_icon.png);
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	display: block;
+	background-repeat: none;
+	cursor: pointer;
+}
+ #iPageContent .popup .action_buttons {
+	margin-bottom: 44px;
+}
+ #iPageContent .popup .action_buttons button {
+	display: none;
+}
+ #iPageContent .popup #send_button {
+	margin: 35px 0;
+}
+ #iPageContent .size-list li {
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 13px 4px 0;
+	font-weight: 400;
+	font-size: 16px;
+	border: 1px solid transparent;
+	padding: 2px 4px;
+	position: relative;
+	text-transform: uppercase;
+}
+ #iPageContent .size-list li:last-child {
+	margin-right: 0;
+}
+ #iPageContent .size-list li.last-child {
+	margin-right: 0;
+}
+ #iPageContent .size-list li.unavailable, #iPageContent .size-list li.back_soon, #iPageContent .size-list li.coming_soon {
+	color: #a7a7a8;
+}
+ #iPageContent .size-list li.unavailable:hover, #iPageContent .size-list li.back_soon:hover, #iPageContent .size-list li.coming_soon:hover {
+	border: 1px solid transparent;
+	cursor: default;
+}
+ #iPageContent .size-list li span {
+	display: none;
+}
+ #iPageContent .size-list li.selected {
+	background-color: #505252;
+	color: #fff;
+}
+ #iPageContent .size-list li.one_size:hover {
+	border: 1px solid transparent;
+	cursor: default;
+}
+ #iPageContent .size-list li.one_size.selected {
+	background-color: #fff;
+	color: #505252;
+}
+ #iPageContent #share-mail-popup hr {
+	margin-bottom: 20px;
+}
+ #iPageContent #product-detail {
+	color: #505252;
+}
+ #iPageContent #product-detail .navigator {
+	margin-top: -55px;
+	position: fixed;
+	top: 50%;
+	cursor: pointer;
+}
+ #iPageContent #product-detail .navigator.left {
+	left: 0;
+	background-image: url(../images/detail/icons/previous_product.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	display: block;
+	width: 36px;
+	height: 0;
+	padding-top: 110px;
+	overflow: hidden;
+}
+ #iPageContent #product-detail .navigator.right {
+	right: 0;
+	background-image: url(../images/detail/icons/next_product.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	display: block;
+	width: 36px;
+	height: 0;
+	padding-top: 110px;
+	overflow: hidden;
+}
+#iPageContent #product-detail #product-images {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 63%;
+	float: left;
+}
+ #iPageContent #product-detail #product-images #product-main-images {
+	width: 100%;
+	min-height: 697px;
+}
+ #iPageContent #product-detail #product-images #product-main-images>img {
+	display: block;
+	width: 100%;
+	height: auto;
+	cursor:pointer;
+}
+ #iPageContent #product-detail #product-images #product-main-images .close_zoom {
+	position: absolute;
+	top: 55px;
+	right: 45px;
+	background-image: url(../images/detail/icons/close_zoom.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	display: block;
+	width: 20px;
+	height: 0;
+	padding-top: 20px;
+	overflow: hidden;
+}
+ #iPageContent #product-detail #product-images .more-products {
+	margin: 55px 30px;
+}
+ #iPageContent #product-detail #product-images .more-products h5 {
+	margin: 0 0 20px;
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+}
+ #iPageContent #product-detail #product-images .more-products a {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+ #iPageContent #product-detail #product-images.zoom {
+	width: 100%;
+}
+ #iPageContent #product-detail #product-images.zoom #product-main-images>img {
+	cursor: url(../images/detail/icons/zoomout.png),url(../../../../static/images/detail/icons/zoomout.cur),pointer;
+}
+ #iPageContent #product-detail #product-info {
+	width: 37%;
+	float: right;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 36px;
+	padding-top: 30px;
+}
+ #iPageContent #product-detail #product-info hr {
+	border-top: 1px solid #d3d4d4;
+}
+ #iPageContent #product-detail #product-info>.wrapper {
+	max-width: 444px;
+	margin: 0 auto;
+	padding-left: 20px;
+	width: 100%;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #goBack {
+	float: left;
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 300;
+	color: #505252;
+	background: transparent url(../images/detail/icons/goback_icon.png) left center no-repeat;
+	padding-left: 15px;
+	font-size: 15px;
+	cursor: pointer;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons {
+	float: right;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li {
+	float: left;
+	margin: 3px 5px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a {
+	outline: 0;
+	cursor: pointer;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#mail-share {
+	background-image: url(../images/detail/icons/share_email_icon_r.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	display: block;
+	width: 15px;
+	height: 0;
+	padding-top: 13px;
+	overflow: hidden;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#mail-share:hover {
+	background-position: 0 -13px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#pinterest {
+	background-image: url(../images/detail/icons/share_pinterest_icon_r.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	display: block;
+	width: 15px;
+	height: 0;
+	padding-top: 13px;
+	overflow: hidden;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#pinterest:hover {
+	background-position: 0 -13px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#instagram {
+	background-image: url(../images/detail/icons/share_instagram_icon.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	display: block;
+	width: 15px;
+	height: 0;
+	padding-top: 13px;
+	overflow: hidden;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#twitter {
+	background-image: url(../images/detail/icons/share_twitter_icon_r.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	display: block;
+	width: 15px;
+	height: 0;
+	padding-top: 13px;
+	overflow: hidden;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#twitter:hover {
+	background-position: 0 -13px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#facebook {
+	background-image: url(../images/detail/icons/share_facebook_icon_r.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	display: block;
+	width: 15px;
+	height: 0;
+	padding-top: 13px;
+	overflow: hidden;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#facebook:hover {
+	background-position: 0 -13px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle {
+	width: 80%;
+	margin: 0 auto 30px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .product-main-info .product-prices {
+	margin-bottom: 15px;
+	font-size: 15px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .product-main-info .product-prices hr {
+	width: 100%;
+	margin: 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .product-main-info .product-ref {
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	margin: 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .product-main-info h2.product-name {
+	cursor: pointer;
+	margin: 8px 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .product-sizes h3 {
+	margin: 0 0 10px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .product-sizes h3.color {
+	margin: 0 0 3px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .product-sizes .size-list {
+	width: 100%;
+	padding-bottom: 15px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .product-sizes .size-list li {
+	font-size: 15px;
+	margin: 0 8px 8px 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .product-sizes .size-list li.selected {
+	background-color: #505252;
+	color: #fff;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .product-sizes button {
+	float: none;
+	margin-top: 15px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .container {
+	display: table;
+	width: 100%;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .container .left {
+	display: table-cell;
+	width: 40%;
+	vertical-align: top;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .container .left>img {
+	cursor: pointer;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-p.bundle .container .right {
+	display: table-cell;
+	width: 60%;
+	vertical-align: top;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-main-info {
+	text-align: center;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-main-info #product-ref {
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	margin: 40px 0 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-main-info h1.product-name {
+	font-family: 'Playfair Display',Georgia,serif;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 32px;
+	margin: 16px 0 22px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-main-info h2.product-name {
+	font-family: 'Playfair Display',Georgia,serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	margin: 0 0 8px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-main-info .product-prices {
+	position: relative;
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	margin-bottom: 32px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-main-info .product-prices .prices {
+	background-color: #fff;
+	display: inline-block;
+	padding: 0 10px 0 14px;
+	z-index: 1;
+	position: relative;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-main-info .product-prices .prices .oldPrice {
+	text-decoration: line-through;
+	display: inline-block;
+	margin: 0 8px 0 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-main-info .product-prices .prices .currentPrice {
+	display: inline-block;
+	margin: 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-main-info .product-prices .prices .currentPrice.sold {
+	color: #950000;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-main-info .product-prices hr {
+	position: absolute;
+	z-index: 0;
+	width: 90%;
+	border-top: 1px solid #d3d4d4;
+	margin: 0 5%;
+	top: 50%;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-main-info #product-long-desc {
+	font-family: 'Playfair Display',Georgia,serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 22px;
+	margin: 0 0 22px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-main-info #product-short-desc {
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	margin: 0 0 32px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details {
+	border-bottom: 1px solid #d3d4d4;
+	margin-bottom: 30px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .infoBox {
+	display: none;
+	border: 1px solid #d3d4d4;
+	border-bottom: 0 none;
+	padding: 20px 0 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .infoBox .left, #iPageContent #product-detail #product-info>.wrapper #product-details .infoBox .right {
+	width: 44%;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .infoBox .block {
+	vertical-align: top;
+	float: left;
+	margin-right: 4%;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .infoBox .block ul li {
+	margin-bottom: 20px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .infoBox .block:first-child {
+	margin-left: 4%;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .menu ul {
+	display: table;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .menu ul li {
+	display: table-cell;
+	vertical-align: middle;
+	cursor: pointer;
+	width: 33%;
+	border-top: 1px solid #d3d4d4;
+	background: url(../images/detail/icons/display_icon.png) no-repeat 90% center;
+	font: 12px/20px Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 300;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .menu ul li.comp {
+	width: 34%;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .menu ul li.shipping {
+	border-left: 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .menu ul li.return {
+	border-left: 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .menu ul li.selected {
+	background: url(../images/detail/icons/close_icon_small.png) no-repeat 90% center;
+	border-right: 1px solid #d3d4d4;
+	border-left: 1px solid #d3d4d4;
+	background-color: #fff;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .menu ul li.selected h3 {
+	font-weight: 700;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .menu ul li:last-child {
+	margin-right: 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .menu ul li h3 {
+	font-size: 13px;
+	margin: 10px 0;
+	font-weight: 300;
+	padding-left: 7px;
+	padding-right: 7px;
+	width: 77%;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .content {
+	margin-top: -1px;
+	position: relative;
+	z-index: 0;
+	font: 12px/20px Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 400;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .content h4 {
+	font: 12px/18px Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 700;
+	margin: 0;
+	margin: 0 0 5px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .content p {
+	margin: 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .content #product-composition .left ul li span {
+	display: block;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .content #product-composition .left ul li span.title {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .content #product-composition .right ul li img {
+	width: 16px;
+	height: auto;
+	margin-right: 5px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .content #product-shipping ul li {
+	width: 50%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 4%;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-details .content #product-shipping ul li .fss {
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 16px;
+	padding: 5px 0 0;
+	display: block
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-colors h3 {
+	font-weight: 300;
+	font-size: 13px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-colors ul li {
+	cursor: pointer;
+	width: 47px;
+	height: 14px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-colors ul li:last-child {
+	margin-right: 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-colors ul li:hover img, #iPageContent #product-detail #product-info>.wrapper #product-colors ul li.selected img {
+	border: 1px solid #A7A7A8;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-colors ul li img {
+	width: 45px;
+	height: 12px;
+	display: block;
+	padding: 1px;
+	border: 1px solid transparent;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-sizes {
+	margin: 0 0 50px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-sizes h3 {
+	font-weight: 300;
+	font-size: 13px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-sizes .size-list {
+	width: 60%;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-sizes .size-list li.back_soon, #iPageContent #product-detail #product-info>.wrapper .product-sizes .size-list li.coming_soon {
+	color: #a7a7a8;
+	background: url(../images/detail/icons/comingsoon_icon.png) no-repeat center right;
+	padding-right: 15px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-sizes .size-list li.back_soon:hover, #iPageContent #product-detail #product-info>.wrapper .product-sizes .size-list li.coming_soon:hover {
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-sizes .size-list li.back_soon:hover span, #iPageContent #product-detail #product-info>.wrapper .product-sizes .size-list li.coming_soon:hover span {
+	display: block;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-sizes .size-list li span {
+	position: absolute;
+	top: 25px;
+	left: -69px;
+	width: 175px;
+	color: #fff;
+	text-align: center;
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-size: 11px;
+	background: transparent url(../images/detail/icons/triangle_dialogue.png) no-repeat center top;
+	display: none;
+	z-index: 9;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-sizes .size-list li span p {
+	background-color: #828484;
+	margin: 7px 0;
+	padding: 6px;
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-size: 12px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .product-sizes button {
+	float: right;
+	margin-left: 4px;
+	max-width: 40%;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-order-process button {
+	border: 0;
+	outline: 0;
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 12px;
+	padding: 5px 32px;
+	line-height: 13px;
+	padding: 11px 32px;
+	display: block;
+	text-align: center;
+	min-width: 260px;
+	margin: 10px auto;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-order-process button:hover {
+	background-color: #505252;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-order-process button#process_order {
+	display: none;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-additional-actions {
+	text-align: center;
+	margin: 24px 0 44px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-additional-actions a {
+	display: inline-block;
+	color: #505252;
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-weight: 400;
+	padding-left: 18px;
+	font-size: 13px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-additional-actions a.help {
+	background: transparent url(../images/detail/icons/call_icon.png) left center no-repeat;
+	margin-right: 30px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-additional-actions a.store_availability {
+	background: transparent url(../images/detail/icons/booking_icon.png) left center no-repeat;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-additional-actions a:hover {
+	text-decoration: underline;
+}
+ #iPageContent #product-detail #product-info>.wrapper #size-guide-block {
+	display: block;
+	text-align: center;
+	margin-bottom: 50px;
+}
+ #iPageContent #product-detail #product-info>.wrapper .comment {
+	font-family: Lato,'Trebuchet MS',Helvetica,sans-serif;
+	font-style: italic;
+	text-align: center;
+	font-weight: 400;
+	font-size: 13px;
+	margin: 30px 0 15px;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-image-thumbs {
+	width: 100%;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-image-thumbs ul {
+	max-width: 290px;
+	margin: 0 auto;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-image-thumbs ul li {
+	display: inline-block;
+	width: 65px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-image-thumbs ul li:last-child {
+	margin-right: 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-image-thumbs ul li.last-child {
+	margin-right: 0;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-image-thumbs ul li img {
+	width: 100%;
+	height: auto;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-image-thumbs ul li:hover, #iPageContent #product-detail #product-info>.wrapper #product-image-thumbs ul li.active {
+	border: 1px solid #d3d4d4;
+}
+ #iPageContent #product-detail #product-info>.wrapper #product-image-thumbs.fixed {
+	position: fixed;
+	top: 40px;
+}
+ #back-to-top {
+	position: fixed;
+	bottom: 35px;
+	right: 20px;
+	display: block;
+	font-size: 10px;
+	text-align: center;
+	background: url(../images/detail/back_to_top.png) no-repeat 0 0;
+	width: 52px;
+	height: 39px;
+	text-indent: -9999px;
+	outline: 0;
+	display: none;
+}
+ #sizeGuideContent {
+	padding: 20px 0;
+}
+
+ #iPageContent .size_guide_tooltip {
+	display: none
+}
+/*
+@media all and (-webkit-min-device-pixel-ratio:1.5) {
+	 #menu-containter #menu-action-area #menu-icon {
+		background-image: url(../images/detail/icons/menu_icon@2x.png);
+		background-repeat: no-repeat;
+		background-color: transparent;
+		display: block;
+		width: 20px;
+		height: 0;
+		padding-top: 10px;
+		overflow: hidden;
+		background-size: 20px 10px;
+	}
+	 #back-to-top {
+		background: url(../images/categoryPage/back_to_top@2x.png) no-repeat 0 0;
+		background-size: cover;
+	}
+	 #iPageContent .popup .close {
+		background-size: 14px 14px;
+		background-image: url(../images/detail/icons/close_icon@2x.png);
+	}
+	 #iPageContent #product-detail #product-images #product-main-images .close_zoom {
+		background-image: url(../images/detail/icons/close_zoom.png);
+		background-repeat: no-repeat;
+		background-color: transparent;
+		display: block;
+		width: 20px;
+		height: 0;
+		padding-top: 20px;
+		overflow: hidden;
+		background-size: 20px 20px;
+	}
+	 #iPageContent #product-detail .navigator.left {
+		background-image: url(../images/detail/icons/previous_product@2x.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-color: transparent;
+		display: block;
+		width: 36px;
+		height: 0;
+		padding-top: 110px;
+		overflow: hidden;
+	}
+	 #iPageContent #product-detail .navigator.right {
+		background-image: url(../images/detail/icons/next_product@2x.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-color: transparent;
+		display: block;
+		width: 36px;
+		height: 0;
+		padding-top: 110px;
+		overflow: hidden;
+	}
+	 #iPageContent #product-detail #product-info>.wrapper #product-actions #goBack {
+		background: transparent url(../images/detail/icons/goback_icon@2x.png) left center no-repeat;
+		background-size: 6px 11px;
+	}
+	 #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#mail {
+		background-image: url(../images/detail/icons/share_email_icon@2x.png);
+		background-repeat: no-repeat;
+		background-color: transparent;
+		display: block;
+		width: 15px;
+		height: 0;
+		padding-top: 13px;
+		overflow: hidden;
+		background-size: 15px 13px;
+	}
+	 #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#pinterest {
+		background-image: url(../images/detail/icons/share_pinterest_icon@2x.png);
+		background-repeat: no-repeat;
+		background-color: transparent;
+		display: block;
+		width: 15px;
+		height: 0;
+		padding-top: 13px;
+		overflow: hidden;
+		background-size: 15px 13px;
+	}
+	 #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#instagram {
+		background-image: url(../images/detail/icons/share_instagram_icon@2x.png);
+		background-repeat: no-repeat;
+		background-color: transparent;
+		display: block;
+		width: 15px;
+		height: 0;
+		padding-top: 13px;
+		overflow: hidden;
+		background-size: 15px 13px;
+	}
+	 #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#twitter {
+		background-image: url(../images/detail/icons/share_twitter_icon@2x.png);
+		background-repeat: no-repeat;
+		background-color: transparent;
+		display: block;
+		width: 15px;
+		height: 0;
+		padding-top: 13px;
+		overflow: hidden;
+		background-size: 15px 13px;
+	}
+	 #iPageContent #product-detail #product-info>.wrapper #product-actions #shareButtons li a#facebook {
+		background-image: url(../images/detail/icons/share_facebook_icon@2x.png);
+		background-repeat: no-repeat;
+		background-color: transparent;
+		display: block;
+		width: 15px;
+		height: 0;
+		padding-top: 13px;
+		overflow: hidden;
+		background-size: 15px 13px;
+	}
+	 #iPageContent #product-detail #product-info>.wrapper #product-details .menu ul li {
+		background: url(../images/detail/icons/display_icon@2x.png) no-repeat 90% center;
+		background-size: 10px 6px;
+	}
+	 #iPageContent #product-detail #product-info>.wrapper #product-details .menu ul li.selected {
+		background: url(../images/detail/icons/close_icon_small@2x.png) no-repeat 90% center;
+		background-size: 9px 9px;
+	}
+	 #iPageContent #product-detail #product-info>.wrapper .product-sizes .size-list li.back_soon, #iPageContent #product-detail #product-info>.wrapper .product-sizes .size-list li.coming_soon {
+		background: url(../images/detail/icons/comingsoon_icon@2x.png) no-repeat center right;
+		background-size: 11px 8px;
+	}
+	 #iPageContent #product-detail #product-info>.wrapper .product-sizes .size-list li span {
+		background: transparent url(../images/detail/icons/triangle_dialogue@2x.png) no-repeat center top;
+		background-size: 14px 7px;
+	}
+	 #iPageContent #product-detail #product-info>.wrapper #product-additional-actions a.help {
+		background: transparent url(../images/detail/icons/call_icon@2x.png) left center no-repeat;
+		background-size: 15px 15px;
+	}
+	 #iPageContent #product-detail #product-info>.wrapper #product-additional-actions a.store_availability {
+		background: transparent url(../images/detail/icons/booking_icon@2x.png) left center no-repeat;
+		background-size: 11px 16px;
+	}
+}
+*/
+ 	
+
+/* RUSIA */
+.ru[lang=ru] #iPageContent #product-detail #product-info>.wrapper .product-main-info h1.product-name
+	{
+	font-family: Georgia;
+}
+
+ .size_guide.bundle {
+	display: none;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}

@@ -1,0 +1,618 @@
+#content.center {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+}
+#content {
+    height: 100%;
+    min-height: 550px;
+    min-width: 990px;
+}
+#tunel {
+    float: left;
+    left: 44px;
+    margin-top: 140px;
+    position: relative;
+    width: 89.5%;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+#pasos {
+    border-top-color: #B3B3B3;
+}
+#pasos {
+    border-top-style: solid;
+    border-top-width: 1px;
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#pasos ul {
+    display: block;
+    padding-left: 0px;
+    width: 650px;
+    min-width: 550px;
+    min-width: 550px;
+    margin-top: -12px;
+    margin-bottom: -12px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow: hidden;
+}
+#pasos li {
+    float: left;
+    display: block;
+    /* width: 120px; */
+    /* margin-right: 6%; */
+    width: 130px;
+}
+#pasos li.paso1:hover, #pasos li.paso1.active {
+    background: url(../images/pasos/paso1_hover.png) no-repeat center top;
+}
+#pasos li.paso2:hover, #pasos li.paso2.active {
+    background: url(../images/pasos/paso2_hover.png) no-repeat center top;
+}
+#pasos li.paso3:hover, #pasos li.paso3.active {
+    background: url(../images/pasos/paso3_hover.png) no-repeat center top;
+}
+#pasos li.paso4:hover, #pasos li.paso4.active {
+    background: url(../images/pasos/paso4_hover.png) no-repeat center top;
+}
+#pasos li.paso5:hover, #pasos li.paso5.active {
+    background: url(../images/pasos/paso5_hover.png) no-repeat center top;
+}
+#pasos li a:hover, #pasos li.active a {
+    color: #000;
+}
+#pasos li a {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    float: left;
+    padding-top: 40px;
+}
+#pasos li a {
+    color: #979797;
+}
+#pasos li.paso1 {
+    background: url(../images/pasos/paso1_normal.png) no-repeat center top;
+}
+#pasos li.paso2 {
+    background: url(../images/pasos/paso2_normal.png) no-repeat center top;
+}
+#pasos li.paso3 {
+    background: url(../images/pasos/paso3_normal.png) no-repeat center top;
+}
+#pasos li.paso4 {
+    background: url(../images/pasos/paso4_normal.png) no-repeat center top;
+}
+#pasos li.paso5 {
+    background: url(../images/pasos/paso5_normal.png) no-repeat center top;
+}
+#articulos {
+    width: 100%;
+    border-collapse: collapse;
+}
+#articulos th.a1 {
+    width: 50%;
+}
+#articulos th {
+    background: none #000;
+    color: #fff;
+}
+#articulos th {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    padding: 2px 2px;
+}
+#articulos th.a2 {
+    width: 15%;
+}
+#articulos th.a3 {
+    width: 12%;
+}
+#articulos th.a4 {
+    width: 13%;
+}
+#articulos th.a5 {
+    width: 10%;
+}
+#articulos td.a6 {
+    width: 12%;
+}
+#articulos td {
+    border-bottom-color: #9f9f9f;
+}
+#articulos td {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 10px 5px 10px 0;
+    vertical-align: middle;
+    line-height: 0.9 !important;
+}
+#articulos td a.cruz {
+    background: url(../images/pasos/cruz.png) no-repeat;
+}
+#articulos td a.cruz {
+    display: block;
+    width: 11px;
+    height: 11px;
+    float: left;
+    margin-top: 35px;
+}
+#articulos td img {
+    display: block;
+    float: left;
+    margin-left: 15px;
+}
+#tablaPedidos img {
+    margin-bottom: 0;
+}
+#articulos td.center {
+    text-align: center;
+}
+#articulos td.right {
+    text-align: right;
+    padding-right: 10px !important;
+}
+#articulos tr.noborde.sepTop td {
+    padding: 15px 10px 5px 0 !important;
+}
+#articulos tr.noborde td {
+    border: none;
+    padding: 5px 5px 5px 0;
+}
+#articulos td.right {
+    text-align: right;
+    padding-right: 10px !important;
+}
+#articulos tr.noborde.sepTop td {
+    padding: 15px 10px 5px 0 !important;
+}
+#articulos tr.noborde.gastos td {
+    padding-bottom: 15px !important;
+}
+#articulos td p {
+    color: #000;
+}
+#articulos td p {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    float: none;
+}
+#articulos tr.noborde.gastos td {
+    padding-bottom: 15px !important;
+}
+#articulos tfoot td {
+    background: none #000;
+}
+#articulos tfoot td {
+    padding: 7px 5px 6px 0;
+}
+span.iva {
+    color: #000;
+    margin-bottom: 20px;
+}
+span.iva {
+    float: right;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    /* margin-top: 5px; */
+    margin: 5px 0;
+}
+#tunel .boxtitle {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.boxtitle {
+    border-bottom: 2px solid #9f9f9f;
+    margin-bottom: 0;
+}
+#regalo {
+    float: left;
+    display: none;
+    width: 99.7%;
+    /* min-width: 1000px; */
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+#regalo {
+    border-top-color: #9f9f9f;
+    border-bottom-color: #9f9f9f;
+}
+.botonera.baja {
+    padding-bottom: 20px;
+}
+.botonera {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+a.add_art {
+    padding: 3px 20px 1px;
+    margin-top: 15px;
+    font-size: 12px;
+    float: left;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    -webkit-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+    transition: all 600ms;
+    width: auto;
+    display: block;
+    clear: both;
+    white-space: nowrap;
+}
+a.add_art {
+    background: none #939598;
+    color: #fff;
+}
+.bot_sig {
+    background: none #fff;
+    border-color: #000;
+}
+.bot_sig {
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    float: right;
+}
+.bot_sig a {
+    background: none #000;
+    color: #fff;
+}
+.bot_sig a {
+    padding: 3px 15px;
+    font-size: 13px;
+    font-family: cgbold;
+    -webkit-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+    transition: all 600ms;
+    width: auto;
+    display: block;
+}
+a {
+    outline: none;
+    text-decoration: none;
+}
+a.accion {
+    color: #000;
+    background: url(../images/pasos/right_arrow.png) no-repeat center right;
+    text-transform: uppercase;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+a.accion {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /*float: left;*/
+    cursor: pointer;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+#articulos td .contadores input {
+    float: left;
+    margin: 0 5px;
+    font-family: "cgRegular", "Helvetica", sans-serif;
+    text-align: center;
+}
+#tablaPedidos .contadores input {
+    margin: 4px 5px !important;
+}
+#articulos td input {
+    border-color: #000;
+}
+#articulos td input {
+    width: 15px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+#articulos td .contadores {
+    width: 70px;
+    margin: auto;
+    text-align: left;
+    overflow: hidden;
+}
+#tablaPedidos .contadores {
+    width: 71px !important;
+}
+#articulos td .contadores img {
+    float: left;
+    margin: 9px 4px;
+    cursor: pointer;
+}
+#articulos td p.descr {
+    float: left;
+    margin: 5px 0;
+    width: 98%;
+}
+#articulos td span.ref {
+    margin: 5px 0;
+    float: left;
+    width: 98%;
+}
+#articulos td span {
+    color: #000;
+}
+#articulos td span {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 0.9 !important;
+}
+
+#inicio {
+    display: block;
+    overflow: hidden;
+}
+.column {
+    float: left;
+    width: 48%;
+    padding-bottom: 20px;
+}
+p.title_12 {
+    background: none #000;
+    color: #fff;
+}
+.column p {
+    color: #000;
+    border-bottom-color: #9f9f9f;
+}
+p.title_12 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: none;
+    float: left;
+    width: 100%;
+    padding: 2px 2px;
+    font-size: 12px;
+}
+.column p.subtitle {
+    border-bottom-color: #9f9f9f;
+}
+.column p.subtitle {
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.column p {
+    color: #000;
+    border-bottom-color: #9f9f9f;
+}
+.column p {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 100%;
+    float: left;
+    margin: 0 0 5px;
+}
+#acceso {
+    display: block;
+    float: left;
+    width: 100%;
+}
+.column .row {
+    float: left;
+    width: 100%;
+    margin: 5px 0;
+}
+.column .block {
+    float: left;
+    width: 46%;
+    position: relative;
+    padding-bottom: 8px;
+}
+.column .row label {
+    color: #000;
+}
+.column .row label {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    float: left;
+    width: 100%;
+    margin-bottom: 3px;
+    cursor: default;
+}
+.column .row input {
+    color: #000;
+    border-color: #8b8889 !important;
+}
+.column .block input {
+    width: 96%;
+    padding-left: 5px;
+}
+.column .row input {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    float: left;
+    width: 35%;
+    border-style: solid !important;
+    border-width: 1px !important;
+    padding: 1px 0;
+}
+.column .passw {
+    color: #000;
+}
+.column .passw {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    float: left;
+    text-decoration: underline;
+    margin: 5px 0;
+}
+input.acc_butt, form#formLogin div.boton button#entrarBtn {
+    padding: 1px 30px;
+    clear: both;
+    font-size: 12px;
+    float: right;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    -webkit-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+    transition: all 600ms;
+    width: auto;
+    display: block;
+    font-weight: bold;
+    white-space: nowrap;
+    background: none #939598;
+    color: #fff;
+    border: none;
+}
+.column.r {
+    float: right;
+}
+.column .block .radio_i {
+    width: 20px;
+    margin-right: 5px;
+    margin-top: 1px;
+    border: none !important;
+    position: absolute;
+}
+.column .row input {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    float: left;
+    width: 35%;
+    border-style: solid !important;
+    border-width: 1px !important;
+    padding: 1px 0;
+}
+.column .block .radio_l {
+    width: auto;
+    margin-right: 20px;
+    margin-top: -2px;
+}
+.column .block input {
+    width: 96%;
+    padding-left: 5px;
+}
+.column .row input.prefijo {
+    margin-right: 3.3%;
+    width: 11%;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.column .row input.telefono {
+    width: 79%;
+}
+.column .block.r {
+     float: right;
+ }
+.radio {
+    background: url(../images/pasos/radioOff.png) no-repeat left top;
+}
+.radio.active {
+    background: url(../images/pasos/radioOn.png) no-repeat left top;
+}
+.radio {
+    width: 12px;
+    height: 13px;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    /* margin-top: 5px; */
+}
+.column .block {
+    float: left;
+    width: 46%;
+    padding-bottom: 8px;
+}
+.column .block .radio_i {
+    width: 20px;
+    margin-right: 5px;
+    margin-top: 1px;
+    border: none !important;
+    position: absolute;
+}
+.column .opt_check {
+    padding: 0 0 10px;
+    float: left;
+    margin: 10px 0;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.column .opt_check {
+    border-bottom-color: #9f9f9f;
+}
+.info_campo {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    float: left;
+    margin: 10px 0;
+}
+.column .opt_check li label {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    float: left;
+    padding-top: 2px;
+    width: 96%;
+}
+
+#articulos tfoot .tfoot_env td {
+    background: none #939598;
+}
+p.title_12 {
+    background: none #000;
+    color: #fff;
+}
+#articulos .nom td {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+#listMetodos li label {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    float: left;
+    max-width: 80%;
+}
+#listMetodos li {
+    /* display: block; */
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+.column p.subtitle2 {
+    border-bottom-color: #9f9f9f;
+}
+.column p.subtitle2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}

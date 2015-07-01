@@ -1,0 +1,97 @@
+ #products {
+  position: relative;
+  overflow: hidden;
+  margin: 20px 230px 50px;
+}
+#products-content {
+  position: relative;
+  margin: 0 auto;
+  min-width: 500px;
+  max-width: 1070px;
+}
+#product-list .product.visible-c {
+  display: block;
+}
+ #product-list .product {
+  float: left;
+  width: 48%;
+  margin: 0 2% 4% 0;
+  position: relative;
+  opacity: 1;
+}
+ #product-list .product .product-image {
+  position: relative;
+  display: block;
+}
+#product-list .product .product-image .main {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+#product-list .product .product-image .img-responsive {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+img, video {
+  vertical-align: middle;
+}
+#product-list .product .product-info {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: block;
+  min-height: 100px;
+  margin: 30px 0 0;
+  visibility: hidden;
+}
+#product-list .product .product-info .content .product-name {
+  color: #4a4a4a;
+  font-family: "Playfair Display", Georgia, Times, serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+ #product-list .product .product-info .content .product-price {
+  position: relative;
+}
+#product-list .product .product-info .content .product-labels {
+  position: relative;
+}
+#product-list .product .product-info .content .product-name {
+  color: #4a4a4a;
+  font-family: "Playfair Display", Georgia, Times, serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+ #product-list .product .product-info .content .product-price .prices {
+  background: #ffffff;
+  display: inline-block;
+  padding: 0 6px 0 15px;
+  z-index: 1;
+  position: relative;
+}
+
+#product-list .product .product-info .content .product-price hr {
+  position: absolute;
+  bottom: 8px;
+  left: 13%;
+  z-index: 0;
+  width: 75%;
+  border-top: 1px solid #b0b0b1;
+}
+p{
+  margin: 1em 0;
+}
+#product-list .product .product-info .content .product-price span {
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
