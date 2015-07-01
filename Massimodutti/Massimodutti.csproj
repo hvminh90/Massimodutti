@@ -152,9 +152,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\Core.cs" />
-    <Content Include="App_Code\Product.cs" />
-    <Content Include="App_Code\SessionDataSource.cs" />
+    <Compile Include="App_Code\Core.cs" />
+    <Compile Include="App_Code\Product.cs" />
+    <Compile Include="App_Code\SessionDataSource.cs" />
     <Compile Include="Check.aspx.cs">
       <DependentUpon>Check.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

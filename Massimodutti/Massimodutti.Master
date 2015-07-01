@@ -21,6 +21,8 @@
     <link href="Include/css/mass-style.css" rel="stylesheet" />
     <link href="Include/css/mass-index.css" rel="stylesheet" />
     <link href="Include/css/mass-map.css" rel="stylesheet" />
+    <link href="Include/css/mass-product.css" rel="stylesheet" />
+
 </head>
 <body>
 
