@@ -36,7 +36,7 @@ $(function() {
     
     $('#footer-top div ul li').mouseenter(function () {
        
-            $(this).css({ top: "25px" });
+        $(this).animate({ top: "25px" });
             $(this).find('a div').animate({ 'margin-top': '6px', 'opacity': '1' });
             $(this).find('span').animate({ 'padding': '13px 0' });
             $(this).find('span div').animate({ 'top': '34px' });
