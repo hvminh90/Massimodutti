@@ -1,0 +1,225 @@
+﻿.modalcont {
+  position: fixed;
+  top: 5%;
+  z-index: 99999;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  background-color: white;
+  border: 1px solid #D3D4D4;
+  color: #505252;
+  display: none;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.modalcont {
+  position: fixed;
+  top: 5%;
+  z-index: 99999;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  background-color: white;
+  border: 1px solid #D3D4D4;
+  color: #505252;
+  display: none;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.overlay_bg_cesta {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: rgba(255, 255, 255, 0.6);
+  display: none;
+}
+.modalcont .popup-wrapper {
+  width: 89%;
+  margin: 0 auto 47px;
+}
+#popupContacto .title {
+  margin: 53px 5px 20px 5px;
+  padding: 20px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+#popupContacto .title {
+  text-transform: uppercase;
+}
+
+#popupContacto .title div {
+  padding: 0 100px;
+}
+#ms_content .text {
+  margin-bottom: 35px;
+  font-family: 'CrimsonText-Roman',sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+#ms_content .contact_data {
+  margin: 50px 0;
+  text-align: center;
+  font-family: 'CrimsonText-Roman',sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  position: relative;
+}
+#ms_content .contact_data .img {
+  margin-bottom: 10px;
+}
+#ms_content .buttons_container {
+  margin-bottom: 35px;
+}
+#ms_content .buttons_container a, #contact_popup_form input[type="submit"] {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+}
+#ms_content a {
+  width: 325px;
+  padding: 10px 0;
+  display: inline-block;
+  text-align: center;
+  color: #000;
+  background-color: #CACACA;
+}
+#ms_content #shops_locator {
+  float: right;
+}
+.margin-bottom {
+  margin-bottom: 35px;
+}
+form#contact_popup_form .title {
+  margin-top: 0;
+}
+
+#popupContacto .select-container {
+  position: relative;
+  display: inline-block;
+}
+#popupContacto .select-style {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 1px;
+  right: 1px;
+  background-color: #FFF;
+  background-image: url("../images/welcome/dropdown.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  border-bottom: 1px solid #000;
+  z-index: 99;
+}
+#popupContacto form select {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  width: 325px;
+  border: 1px solid #000;
+  border-radius: 0;
+  -webkit-appearance: none;
+  padding: 5px;
+  background: #FFF;
+}
+form#contact_popup_form .pull-right {
+  float: right;
+}
+#popupContacto .select-container {
+  position: relative;
+  display: inline-block;
+}
+
+form#contact_popup_form div.client_data {
+  position: relative;
+}
+#popupContacto .inline_block_element {
+  display: inline-block;
+}
+form#contact_popup_form select, form#contact_popup_form .client_data input {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  width: 325px;
+  box-sizing: border-box;
+}
+#popupContacto .message textarea {
+  height: 125px;
+}
+#popupContacto .mandatory {
+  font-family: 'CrimsonText-Roman',sans-serif;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+#popupContacto .check_privacy_policy {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+}
+#popupContacto .check_privacy_policy input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+  border: 0;
+}
+#popupContacto .check_privacy_policy a {
+  text-decoration: underline;
+  color: #505252;
+}
+#popupContacto .button_container {
+  text-align: center;
+  border-bottom: 1px solid #000;
+  padding-bottom: 35px;
+}
+#popupContacto .button_container input[type="submit"] {
+  padding: 10px 130px;
+  color: #000;
+  background-color: #A7A8A8;
+  border: 0;
+}
+#popupContacto form select {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  width: 325px;
+  border: 1px solid #000;
+  border-radius: 0;
+  -webkit-appearance: none;
+  padding: 5px;
+  background: #FFF;
+}
+form#contact_popup_form div.client_data {
+  position: relative;
+}
+#popupContacto input, #popupContacto .message textarea {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  text-style: italic;
+  width: 100%;
+  box-sizing: border-box;
+}
+form#contact_popup_form input, form#contact_popup_form textarea {
+  border: 1px solid #000;
+  padding: 6px;
+}
+form#contact_popup_form select, form#contact_popup_form .client_data input {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  width: 325px;
+  box-sizing: border-box;
+}
+.inline_block_element{
+    width:48%;
+}
+.inline_block_element input{
+    width:100%;
+}
+.padding-left-5{
+    padding-left:1%;
+}
+.padding-right-5{
+    padding-right:1%;
+}
