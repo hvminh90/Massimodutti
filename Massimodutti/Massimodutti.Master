@@ -23,6 +23,7 @@
     <link href="Include/css/mass-map.css" rel="stylesheet" />
     <link href="Include/css/mass-product.css" rel="stylesheet" />
     <link href="Include/css/mass-help.css" rel="stylesheet" />
+    <link href="Include/css/mass-cart.css" rel="stylesheet" />
 </head>
 <body>
 

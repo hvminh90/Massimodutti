@@ -12,7 +12,7 @@
 #tunel {
     float: left;
     left: 44px;
-    margin-top: 140px;
+    margin-top: 40px;
     position: relative;
     width: 89.5%;
     z-index: 1;
@@ -615,4 +615,88 @@ p.title_12 {
     border-bottom-width: 1px;
     margin-bottom: 10px;
     margin-top: 20px;
+}
+
+/*ADVANCE CSS FOR PAGE CART*/
+.cPage-title{
+    font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  padding: 2px 2px;
+  margin-bottom:50px;
+}
+#articulos td p#pCart-total-cost{
+    color:white;
+}
+#articulos tfoot td p,#articulos tfoot td span.decimal{
+    color:white;
+}
+a.cPage-gift-code-a{
+    margin-bottom:10px;
+    color:black;
+    font-weight:bold;
+    background: url(../images/pasos/right_arrow.png) no-repeat center right;
+    text-transform: capitalize;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /*float: left;*/
+    cursor: pointer;
+    float:left;
+}
+#articulos td input.input-gift-code{
+    width:auto;
+    border:none;
+    background-color:gray;
+    color:#000;
+    font-weight:bold;
+    margin-left:10px;
+}
+#articulos td input.input-gift-code::-webkit-input-placeholder {
+  color: #000;
+}
+#articulos td input.input-gift-code:-moz-placeholder {
+  color: #000;
+}
+p.title_shipping_info {
+  background: none #a59adc;
+  color: #000;
+}
+p.title_shipping_info {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border: none;
+  float: left;
+  width: 100%;
+  padding: 2px 2px;
+  font-size: 11px;
+}
+.pCart-center-tag{
+    text-align:center;
+}
+.pCart-position-relative{
+    position:relative;
+}
+.pCart-position-absolute{
+    position:absolute;
+}
+.pCart-absolute-center{
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+}
+select.pCart-select-shipping{
+    width:100%;
+}
+.pCart-update-info{
+    margin-top:20px;
+    padding:10px 0;
+    border-bottom:1px solid #B3B3B3;
 }
