@@ -21,7 +21,7 @@ var arrayLinkHelp = ['cham-soc-khach-hang', 'huong-dan-mua-hang', 'giao-hang-toa
 
 var loadPageHelp = function (page, event) {
     removeClassAMenu();
-    $('#menu-active').css('top', 195 + ((page - 1) * 50));
+    $('#menu-active').css('top', 195 + ((page - 1) * 56));
     $(event.target).addClass('active');
     /* $.get('../html_help_partial_page/' + pageLoad[page], function (result) {
          $result = $(result);
