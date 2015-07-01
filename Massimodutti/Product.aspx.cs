@@ -25,7 +25,15 @@ namespace Massimodutti
                 {
                     Response.Redirect("Warring.aspx");
                 }
+                ProductId = id;
+                //rptProduct.DataSource = CHITIET(id);
+                //rptProduct.DataBind();
             }
+            //foreach (RepeaterItem ritem in rptProduct.Items)
+            //{
+            //    Button btn = ritem.FindControl("btn_Add_to_cart") as Button;
+            //    btn.Click += new EventHandler(btn_Click);
+            //}
         }
         protected void rptProduct_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
@@ -46,8 +54,18 @@ namespace Massimodutti
 
             }
         }
+        //void btn_Click(object sender, EventArgs e)
+        //{
+        //    Button btn = (Button)sender;
+        //    RepeaterItem ritem = (RepeaterItem)btn.NamingContainer;
+        //    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('@@@');", true);
+        //}
         #region Binding
-
+        protected DataTable CHITIET(string productid)
+        {
+            return App_Code.Core.GetDataTable(
+                 @"SELECT * FROM [PRODUCT] WHERE [PRODUCTID] = " + productid);
+        }
         protected DataTable COLOUR(string productid)
         {
             return App_Code.Core.GetDataTable(
@@ -73,5 +91,16 @@ namespace Massimodutti
                 WHERE PRODUCT.PRODUCTID =" + productid);
         }
         #endregion
+
+        //protected void btn_Add_to_cart_Click(object sender, EventArgs e)
+        //{
+        //    IDictionary itemValues = new Dictionary<object, object>();
+        //    itemValues["ProductID"] = ProductId;
+        //    itemValues["ProductName"] = ProductName;
+        //    itemValues["UnitPrice"] = Price;
+        //    itemValues["QuantityPerUnit"] = "1";
+        //    App_Code.Product.AddProductToTheCart(itemValues);
+        //    Response.Redirect("ShopingCart.aspx");
+        //}
     }
 }

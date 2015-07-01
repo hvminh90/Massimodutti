@@ -302,13 +302,14 @@
 
                                 <div id="product-order-process">
                                      <asp:Button ID="btn_Add_to_cart" runat="server" CausesValidation="false" 
-                                         CommandName="cmd_Add_to_cart"
+                                          CommandName="cmd_Add_to_cart" 
                                         CssClass="add_to_cart black" Text="Add to cart" />
+                                     
 
                                     <button id="process_order" class="black"><span>Process order</span></button>
                                     <p class="comment"><%#Eval("NOTE") %></p>
                                 </div>
-
+                                
 
                                 <div id="product-additional-actions">
                                     <!-- <a href="#" class="help">Would you like some help?</a> -->
