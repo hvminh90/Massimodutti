@@ -28,7 +28,7 @@
                                         <%--<a
                                             onclick=" return confirm('Bạn chắc chắn muốn xóa sản phẩm này ra khỏi giỏ hàng?');"
                                             class="cruz">&nbsp;</a>--%>
-                                        <asp:ImageButton ID="imgbtnDel" runat="server" CssClass="cruz" CommandName="cmdDel" OnClientClick="return confirm('Bạn chắc chắn muốn xóa sản phẩm này ra khỏi giỏ hàng?');"/> 
+                                        <asp:ImageButton ID="imgbtnDel" runat="server" CssClass="cruz" CommandName="cmdDel" OnClientClick="return confirm('Bạn chắc chắn muốn xóa sản phẩm này ra khỏi giỏ hàng?');" ImageUrl="~/Include/images/pasos/cruz.png"/> 
 
                                         <a href="Product.aspx?ProductId=<%#Eval("productId") %>">
                                             <img style="cursor: pointer; width: 55px"
