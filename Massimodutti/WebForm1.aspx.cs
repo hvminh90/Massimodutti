@@ -13,5 +13,18 @@ namespace Massimodutti
         {
 
         }
+        protected void rptProduct_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            
+            if (e.CommandName == "cmd_Add_to_cart")
+            {
+                Int32 id = Convert.ToInt32(e.CommandArgument);
+                Label lbl = (Label) e.Item.FindControl("lbl");
+                lbl.Text = id.ToString();
+               
+
+
+            }
+        }
     }
 }
