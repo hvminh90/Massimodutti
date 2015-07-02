@@ -42,7 +42,12 @@
                           <li class="separator">|</li>
                         <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalContact.aspx',{'width':'80%'})" >Liên hệ</a></li>
                         <li class="separator">|</li>
-                        <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalLogin.aspx',{'width':'50%','min-height':'300px','height':'300px','max-width':'640px'})" >Đăng nhập</a></li>
+                        <%if(Session["username"] != null) {%>
+                            <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalLogin.aspx',{'width':'50%','min-height':'300px','height':'300px','max-width':'640px'})" ><%=Session["username"] %></a></li>
+                        <%} else {%>
+                            <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalLogin.aspx',{'width':'50%','min-height':'300px','height':'300px','max-width':'640px'})" >Đăng nhập</a></li>
+                        <%} %>
+                        
                         <%--<li class="separator account_sep">|</li>
                         <li class="account"><a href="javascript:void(0)">My Account</a></li>--%>
                         <li class="separator basket_sep">|</li>
