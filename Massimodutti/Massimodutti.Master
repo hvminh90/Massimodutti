@@ -32,9 +32,9 @@
         <header>
             <div id="header-menu">
                 <div id="search">
-                    <form id="searchForm">
+                    <%--<form id="searchForm">--%>
                         <input type="text" id="search_text" name="search_text" placeholder="Từ khóa tìm kiếm">
-                    </form>
+                    <%--</form>--%>
                 </div>
                 <div id="general-menu">
                     <ul>
@@ -108,7 +108,7 @@
             <div id="footer-top">
 	            <div class="footer-top-background">
 		            <ul>
-			            <li class="new-apps"><a href="http://www.massimodutti.com/webapp/wcs/stores/servlet/ItxStandardNewAppsPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">BLOG<div></div></a></li><li class="shops"><a href="javascript:void(0)" onclick="showMap();">CỬA HÀNG<div></div></a> </li><li style="border-right-style: none;"><span style="padding: 19px 0px;">TIN TỨC</span><div style="top: 46px;"><form id="newsletter-form" action="http://www.massimodutti.com/webapp/wcs/stores/servlet/NewsletterPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450"><input id="newsletter" name="newsletter" type="text" placeholder="Xin nhập email * "></form></div></li></ul>
+			            <li class="new-apps"><a href="http://www.massimodutti.com/webapp/wcs/stores/servlet/ItxStandardNewAppsPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">BLOG<div></div></a></li><li class="shops"><a href="javascript:void(0)" onclick="showMap();">CỬA HÀNG<div></div></a> </li><li style="border-right-style: none;"><span style="padding: 19px 0px;">TIN TỨC</span><div style="top: 46px;"><%--<form id="newsletter-form" action="http://www.massimodutti.com/webapp/wcs/stores/servlet/NewsletterPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">--%><input id="newsletter" name="newsletter" type="text" placeholder="Xin nhập email * "><%--</form>--%></div></li></ul>
 	            </div>
             </div>
             <div id="footer-bottom">
@@ -170,7 +170,7 @@
             <div class="modalbg"></div>
             <div class="modalcont">
                 <div class="modalinner">
-                    <form id="buscarTiendasForm" action="" method="post">
+                    <%--<form id="buscarTiendasForm" action="" method="post">--%>
                         <div class="modaltitle">BẢN ĐỒ CỬA HÀNG</div>
                         <div class="modalscrollable">
                             <div id="shopmap">
@@ -200,7 +200,7 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    <%--</form>--%>
 
                 </div>
                 <a class="modalclose" onclick="closeMap();"></a>

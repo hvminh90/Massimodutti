@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Massimodutti.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="Massimodutti.Product" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Repeater runat="server" ID="rptProduct" EnableViewState="False"
+    <asp:Repeater runat="server" ID="rptProduct"
         OnItemCommand="rptProduct_ItemCommand"
         DataSourceID="SqlDataSourceChiTiet">
         <ItemTemplate>
@@ -301,9 +301,9 @@
 
 
                                 <div id="product-order-process">
-                                     <asp:Button ID="btn_Add_to_cart" runat="server" CausesValidation="false" 
+                                     <asp:Button ID="btn_Add_to_cart" runat="server"
                                           CommandName="cmd_Add_to_cart" 
-                                        CssClass="add_to_cart black" Text="Add to cart" />
+                                        CssClass="add_to_cart black" Text="Add to cart" CommandArgument='<%# Eval("PRODUCTID") %>' />
                                      
 
                                     <button id="process_order" class="black"><span>Process order</span></button>
