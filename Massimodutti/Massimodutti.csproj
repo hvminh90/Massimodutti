@@ -169,7 +169,9 @@
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="LoginModal.aspx" />
+    <Content Include="ModalAccount.aspx" />
     <Content Include="ModalContact.aspx" />
+    <Content Include="ModalInfoOrder.aspx" />
     <Content Include="ModalLogin.aspx" />
     <Content Include="ModalMap.aspx" />
     <Content Include="Order.aspx" />
@@ -227,12 +229,26 @@
     <Compile Include="Massimodutti.Master.designer.cs">
       <DependentUpon>Massimodutti.Master</DependentUpon>
     </Compile>
+    <Compile Include="ModalAccount.aspx.cs">
+      <DependentUpon>ModalAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModalAccount.aspx.designer.cs">
+      <DependentUpon>ModalAccount.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ModalContact.aspx.cs">
       <DependentUpon>ModalContact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ModalContact.aspx.designer.cs">
       <DependentUpon>ModalContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModalInfoOrder.aspx.cs">
+      <DependentUpon>ModalInfoOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModalInfoOrder.aspx.designer.cs">
+      <DependentUpon>ModalInfoOrder.aspx</DependentUpon>
     </Compile>
     <Compile Include="ModalLogin.aspx.cs">
       <DependentUpon>ModalLogin.aspx</DependentUpon>
