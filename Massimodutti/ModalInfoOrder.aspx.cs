@@ -7,17 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Massimodutti
 {
-    public partial class ModalLogin : System.Web.UI.Page
+    public partial class ModalInfoOrder : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void send_login_Click(object sender, EventArgs e)
-        {
-            Session["username"] = "binh hoang van";
-            Response.Redirect("Index.aspx");
         }
     }
 }
