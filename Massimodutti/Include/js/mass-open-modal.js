@@ -76,17 +76,56 @@ function closeModal() {
 }
 function openModal(url, modalOption) {
     var modalContent = $('#tiendas').find('.modalcont');
-
+   
     //for (var key in modalOption) {
     //    modalContent.css(key,modalOption[key]);
     //}
     $('#tiendas').empty();
     //$('#tiendas').
-    $('#tiendas').load(url);
+    //if (url == "ModalAccount.aspx") {
+    //    //loadNews(url);
+    //    $('#tiendas').load(url, function () {
+    //        var pane = $('.scroll-pane').jScrollPane().data('jsp')
+           
+
+    //        pane.reinitialise();
+    //        setInterval(
+    //                     function () {
+    //                         pane.reinitialise();
+    //                     },
+    //                     1000
+    //                 );
+    //      //  $('.jspPane').load(url);
+    //        //$('.jspPane').animate({ 'margin-left':'0' });
+    //       // api.reinitialise();
+    //        //return false;
+    //    });
+      
+    //}
+    //else
+        $('#tiendas').load(url);
+    var modalAccount = $('#tiendas').find('.scroll-pane').data('jsp');
+   // modalAccount.jScrollPane();
+    //if (url == "ModalAccount.aspx") {
+    //    $('#tiendas').load(url);
+    //    $('#tiendas').find('.scroll-pane').jScrollPane();
+    //}
+    //else {
+    //    $('#tiendas').load(url);
+    //}
+    //alert('1');
     $('#tiendas').show();
     // initmap(); 
 }
+function loadNews(url) {
+    var pane = $('.scroll-pane').jScrollPane({ scrollbarWidth: 12, scrollbarMargin: 8, autoReinitialise: true });
+   // var contentPane = pane.data('jsp').getContentPane();
+    var jspapi = pane.data('jsp');
 
+    $('#tiendas').load(url,
+        function () { pane.reinitialise(); }
+    );
+}
 $(document).ready(function () {
     //initmap();
 

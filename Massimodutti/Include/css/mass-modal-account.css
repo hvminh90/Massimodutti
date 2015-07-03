@@ -1,0 +1,220 @@
+﻿
+#content-1 #menu_modal {
+  margin-left: 10px;
+  float: left;
+  min-height: 550px;
+  height: 100%;
+  z-index: 1;
+}
+
+
+
+ #content-1 a.close_modal {
+  position: absolute;
+  top: 10px;
+  /* right: 10px; */
+  left: 977px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+ #content-1 #logo {
+  top: 30px;
+  left: 30px;
+  height: 23px;
+  position: absolute;
+  width: 163px;
+  z-index: 2;
+}
+#content-1 #menu_modal {
+  background: url(../images/common/logo.png) no-repeat scroll 20px 30px
+ transparent;
+  text-transform: uppercase;
+}
+ #content-1#menu_modal {
+  margin-left: 10px;
+  float: left;
+  min-height: 550px;
+  height: 100%;
+  z-index: 1;
+}
+ #content-1 #menu_modal > ul {
+  padding-top: 70px;
+  padding-right: 25px;
+  width: 190px;
+  margin: 0;
+  list-style: none;
+  padding: 70px 25px 30px 22px;
+}
+ #content-1 #menu_modal>ul>li {
+  border-bottom-color: #969696;
+}
+ #content-1 #menu_modal > ul > li {
+  font-size: 12px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+#content-1 #content_micuenta {
+  padding-bottom: 50px;
+}
+#content-1 #content_micuenta {
+  float: left;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  width: 500px;
+}
+#content-1 #content_micuenta .title_modal {
+  color: #000;
+  border-bottom-color: #989897;
+}
+#content-1 #content_micuenta .title_modal {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 8px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin-top: 0;
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+}
+#content-1 #mspot {
+  float: left;
+  margin-bottom: 10px;
+  width: 100%;
+}
+#content-1 p.title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 11px;
+  padding: 2px 0;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border: none;
+  float: left;
+  width: 100%;
+}
+#content-1 #content_micuenta p.subtitulo {
+  border-bottom-color: #9f9f9f;
+  color: #000000;
+}
+#content-1 #content_micuenta p.subtitulo {
+  float: left;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  width: 100%;
+}
+#content-1 #content_micuenta .row {
+  float: left;
+  width: 100%;
+  margin: 5px 0;
+  /* margin: 5px 0 15px 0; */
+}
+#content-1 #content_micuenta .block {
+  width: 45%;
+  float: left;
+  position: relative\0/IE9;
+  padding-bottom: 8px;
+  margin-right: 35px;
+}
+#content_micuenta .row label {
+  cursor: default;
+  float: left;
+  font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  margin-bottom: 3px;
+  width: 96%;
+  text-align: left;
+}
+#content_micuenta .row input {
+  border-color: #8b8889 !important;
+  color: #000;
+}
+#content_micuenta .row input {
+  border-width: 1px !important;
+  border-style: solid !important;
+  float: left;
+  font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  padding: 1px 0;
+  width: 35%;
+}
+#content_micuenta .block.r {
+  float: right;
+  margin-right: 0;
+}
+ .jspVerticalBar {
+  right: 10px;
+  top: 30px;
+  bottom: 10px;
+}
+.jspCap {
+  display: none;
+}
+.jspTrack {
+  background: url(../images/modal/scroll_bg.png) repeat-y center top;
+  position: relative;
+}
+.jspDrag {
+  background: #696864;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  /* margin-left: -1px; */
+}
+ a.close_modal {
+  background: url(../images/mapIcon/close_news.png) no-repeat;
+}
+ a.close_modal {
+  position: absolute;
+  top: 10px;
+  /* right: 10px; */
+  left: 977px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+ #menu_modal>ul>li>a {
+  color: #000;
+}
+ #content-1 p.title {
+  background: none #000;
+  color: #fff;
+}
+  #content-1 #content_micuenta .block.r {
+  float: right;
+  margin-right: 0;
+}
+    #content-1 #content_micuenta .block input {
+  width:100%;
+}
+        #content-1 #content_micuenta .block select {
+  width:100%;
+}
+
+       #content-1    table th {
+  background: transparent !important;
+  color: #000 !important;
+  
+}
+       .info-order table.articulospedidos th ,  .info-order table.articulospedidos td{
+   border-bottom-width: .1em !important; 
+  border-bottom-style: solid !important;
+  border-top-width: .1em !important;
+  border-top-style: solid !important;
+  width: 20%;
+  text-align: left !important;
+  font-weight: normal !important;
+}
