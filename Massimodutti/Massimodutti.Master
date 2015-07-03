@@ -33,6 +33,8 @@
         <header>
             <div id="header-menu">
                 <div id="search">
+                    <%--<input type="button" sytle="float:left" value="123"/>--%>
+                    <asp:ImageButton ID="btnSearch" runat="server" ImageUrl="~/Include/images/header/search.png" style="height: 13px;width: 13px;position: absolute;left: -20px;top: 5px;"/>
                     <%--<form id="searchForm">--%>
                         <input type="text" id="search_text" name="search_text" placeholder="Từ khóa tìm kiếm">
                     <%--</form>--%>
@@ -55,29 +57,7 @@
                         <li class="basket"><a href="ShopingCart.aspx"><span class="basket-items-amount">0</span></a></li>
                     </ul>
                 </div>
-                   <%--<asp:Button ID="btn_open" runat="server" Text="Open Login page" CssClass="openModal" />
-                                    <div class="modal">
-                                    
-                                    <div class="modal-body">
-                                        <iframe style=" width:100%; height: 100%;" id="ifrm" src="LoginModal.aspx" runat="server"></iframe>
-                                    </div>
-                                    <div class="modal-footer">
-                                         <asp:Button ID="btn_close" runat="server" Text="OK" CssClass="modalOK close-modal" />
-                                    </div>
-                                </div>
-                                <div class="modal-backdrop"></div>--%>
-                <%--<asp:ScriptManager ID="ScriptManager1" runat="server">
-                    </asp:ScriptManager>
-                    <asp:Button ID="Button1" runat="server" Text="Fill Form in Popup" />
-
-                    <cc1:ModalPopupExtender ID="mp1" runat="server" PopupControlID="Panl1" TargetControlID="Button1"
-                        CancelControlID="Button2" BackgroundCssClass="Background">
-                    </cc1:ModalPopupExtender>
-                    <asp:Panel ID="Panl1" runat="server" CssClass="Popup" align="center" style = "display:none">
-                        <iframe style=" width: 350px; height: 300px;" id="irm1" src="LoginModal.aspx" runat="server"></iframe>
-                        <br/>
-                        <asp:Button ID="Button2" runat="server" Text="Close" />
-                </asp:Panel>--%>
+                  
             </div>
             <nav>
                 <div class="white-background">
@@ -99,7 +79,68 @@
                     </div>
                 </div>
                 <div id="sub-menu" style="display: none; opacity: 1;">
-                    <%=category %>
+                    <%--<%=category %>--%>
+                    <div  id="1"  data-id="1" class="informatives" style="display:none;">
+                <ul class="1099011-0" style="width: 25%;">
+                    <li class="informative-text"><a href="#" data-id="1370021" data-parent="1099011"
+                                                    data-nameen="Shop by">Shop by</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/new-c1344507.html" data-id="1344507"
+                           data-parent="1099011" data-nameen="New">New</a></li>
+                    <li style="margin: 0px;"><a href="http://www.massimodutti.com/es/en/women/indigo-c675004.html"
+                                                data-id="675004" data-parent="1099011" data-nameen="Indigo
+">Indigo
+                        <span class="label-new-subcategory">NEW</span></a></li>
+                </ul>
+                <ul class="1099011-1" style="width: 25%;">
+                    <li class="informative-text"><a href="#" data-id="1370023" data-parent="1099011"
+                                                    data-nameen="Collection">Collection</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/jackets-c675009.html" data-id="675009"
+                           data-parent="1099011" data-nameen="Jackets">Jackets</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/leather-jackets-c675010.html" data-id="675010"
+                           data-parent="1099011" data-nameen="Leather jackets">Leather jackets</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/blazers-c675008.html" data-id="675008"
+                           data-parent="1099011" data-nameen="Blazers">Blazers</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/suits-c1383007.html" data-id="1383007"
+                           data-parent="1099011" data-nameen="Suits">Suits</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/dresses-c1349502.html" data-id="1349502"
+                           data-parent="1099011" data-nameen="Dresses">Dresses</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/skirts-c675013.html" data-id="675013"
+                           data-parent="1099011" data-nameen="Skirts">Skirts</a></li>
+                    <li style="margin: 0px;"><a
+                            href="http://www.massimodutti.com/es/en/women/sweaters-%26-cardigans-c675007.html"
+                            data-id="675007" data-parent="1099011" data-nameen="Sweaters &amp; Cardigans">Sweaters &amp;
+                        Cardigans</a></li>
+                </ul>
+                <ul class="1099011-2" style="width: 25%;">
+                    <li style="margin-top: 36px;"><a
+                            href="http://www.massimodutti.com/es/en/women/shirts-%26-blouses-c675005.html"
+                            data-id="675005" data-parent="1099011" data-nameen="Shirts &amp; Blouses">Shirts &amp;
+                        Blouses</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/t-shirts-c675006.html" data-id="675006"
+                           data-parent="1099011" data-nameen="T-shirts">T-shirts</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/trousers-c675011.html" data-id="675011"
+                           data-parent="1099011" data-nameen="Trousers">Trousers</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/denim-c675012.html" data-id="675012"
+                           data-parent="1099011" data-nameen="Denim">Denim</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/shoes-c675015.html" data-id="675015"
+                           data-parent="1099011" data-nameen="Shoes">Shoes</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/bags-%26-purses-c675016.html" data-id="675016"
+                           data-parent="1099011" data-nameen="Bags &amp; Purses">Bags &amp; Purses</a></li>
+                    <li style="margin: 0px;"><a href="http://www.massimodutti.com/es/en/women/accessories-c675014.html"
+                                                data-id="675014" data-parent="1099011" data-nameen="Accessories">Accessories</a>
+                    </li>
+                </ul>
+                <ul class="1099011-3" style="width: 24%;">
+                    <li class="informative-text"><a href="#" data-id="1370027" data-parent="1099011"
+                                                    data-nameen="Limited Editions">Limited Editions</a></li>
+                    <li><a href="http://www.massimodutti.com/es/en/women/the-equestrian-c1337011.html" data-id="1337011"
+                           data-parent="1099011" data-nameen="THE EQUESTRIAN">THE EQUESTRIAN</a></li>
+                    <li style="margin: 0px;"><a
+                            href="http://www.massimodutti.com/es/en/women/nyc-limited-edition-c1319008.html"
+                            data-id="1319008" data-parent="1099011" data-nameen="NYC LIMITED EDITION">NYC LIMITED
+                        EDITION</a></li>
+                </ul>
+            </div>-->
                 </div>
             </nav>
         </header>
