@@ -25,6 +25,7 @@
     <link href="Include/css/mass-help.css" rel="stylesheet" />
     <link href="Include/css/mass-cart.css" rel="stylesheet" />
     <link href="Include/css/mass-modal.css" rel="stylesheet" />
+        <link href="Include/css/mass-modal-account.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -43,7 +44,7 @@
                         <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalContact.aspx',{'width':'80%'})" >Liên hệ</a></li>
                         <li class="separator">|</li>
                         <%if(Session["username"] != null) {%>
-                            <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalLogin.aspx',{'width':'50%','min-height':'300px','height':'300px','max-width':'640px'})" ><%=Session["username"] %></a></li>
+                            <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalAccount.aspx',{'width':'50%','min-height':'300px','height':'300px','max-width':'640px'})" ><%=Session["username"] %></a></li>
                         <%} else {%>
                             <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalLogin.aspx',{'width':'50%','min-height':'300px','height':'300px','max-width':'640px'})" >Đăng nhập</a></li>
                         <%} %>
@@ -175,6 +176,8 @@
         <script src="Include/js/mass-help.js"></script>
         <script src="Include/js/mass-open-modal.js"></script>
         <script src="Include/js/mass-product.js"></script>
+           <script src="Include/js/jscrollPanel/jquery.jscrollpane.min.js"></script>
+    <script src="Include/js/jscrollPanel/jquery.mousewheel.js"></script>
         <div id="tiendas" class="modal_window" style="display: none;">
             
         </div>
