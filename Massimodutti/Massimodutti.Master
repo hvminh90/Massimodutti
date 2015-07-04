@@ -84,21 +84,19 @@
                 </div>
                 <div id="sub-menu" style="display: none; opacity: 1;">
                     <%--<%=category %>--%>
-                    <div id="1" data-id="1" class="informatives" style="display: none;">
+                    <%--<div id="1" data-id="1" class="informatives" style="display: none;">
                         <ul class="1099011-0" style="width: 25%;">
                             <li class="informative-text"><a href="#" data-id="1370021" data-parent="1099011"
                                 data-nameen="Shop by">Shop by</a></li>
                             <li><a href="http://www.massimodutti.com/es/en/women/new-c1344507.html" data-id="1344507"
                                 data-parent="1099011" data-nameen="New">New</a></li>
                             <li style="margin: 0px;"><a href="http://www.massimodutti.com/es/en/women/indigo-c675004.html"
-                                data-id="675004" data-parent="1099011" data-nameen="Indigo
-">Indigo
-                        <span class="label-new-subcategory">NEW</span></a></li>
+                                data-id="675004" data-parent="1099011" data-nameen="Indigo">Indigo
+                            </a></li>
                         </ul>
                         <ul class="1099011-1" style="width: 25%;">
-                            <%--<li class="informative-text"><a href="#" data-id="1370023" data-parent="1099011"
-                                data-nameen="Collection">Collection</a></li>--%>
-                           <li class="informative-text"><a href="#" data-id="1370023" data-parent="1099011"
+                           
+                            <li class="informative-text"><a href="#" data-id="1370023" data-parent="1099011"
                                 data-nameen="Collection">Collection</a></li>
                             <li><a href="http://www.massimodutti.com/es/en/women/leather-jackets-c675010.html" data-id="675010"
                                 data-parent="1099011" data-nameen="Leather jackets">Leather jackets</a></li>
@@ -116,11 +114,11 @@
                         Cardigans</a></li>
                         </ul>
                         <ul class="1099011-2" style="width: 25%;">
-                          <li class="informative-text"><a href="#" data-id="1370027" data-parent="1099011"
+                            <li class="informative-text"><a href="#" data-id="1370027" data-parent="1099011"
                                 data-nameen="Limited Editions">Limited Editions</a></li>
-                             <li><a href="http://www.massimodutti.com/es/en/women/jackets-c675009.html" data-id="675009"
+                            <li><a href="http://www.massimodutti.com/es/en/women/jackets-c675009.html" data-id="675009"
                                 data-parent="1099011" data-nameen="Jackets">Jackets</a></li>
-                            <li ><a
+                            <li><a
                                 href="http://www.massimodutti.com/es/en/women/shirts-%26-blouses-c675005.html"
                                 data-id="675005" data-parent="1099011" data-nameen="Shirts &amp; Blouses">Shirts &amp;
                         Blouses</a></li>
@@ -148,7 +146,8 @@
                                 data-id="1319008" data-parent="1099011" data-nameen="NYC LIMITED EDITION">NYC LIMITED
                         EDITION</a></li>
                         </ul>
-                    </div>
+                    </div>--%>
+                    <%= category %>
                 </div>
             </nav>
         </header>
