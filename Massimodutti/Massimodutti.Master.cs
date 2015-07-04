@@ -17,7 +17,7 @@ namespace Massimodutti
     {
         public string connectionstring = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
-        public int NumberMenu3PerColumn = Convert.ToInt32( ConfigurationManager.AppSettings["NumberMenu3PerColumn"]);
+        public int NumberMenu3PerColumn = Convert.ToInt32(ConfigurationManager.AppSettings["NumberMenu3PerColumn"]);
         public static string parentCategory = string.Empty;
         public static string category = string.Empty;
         protected void Page_Load(object sender, EventArgs e)
@@ -108,62 +108,103 @@ namespace Massimodutti
             //}
             //category = objstr.ToString();
 
-            foreach(MenuParant objParentMenu in lstMenuParent)
+            foreach (MenuParant objParentMenu in lstMenuParent)
             {
                 objstr.Append("<div style=\"display: none;\" class=\"informatives\" id=\"" + objParentMenu.Id + "\">");
                 var lstMenu2ByParent = lstMenuChild2.Where(m => m.PairantId == objParentMenu.Id).ToList();
-                if(lstMenu2ByParent.Count > 0)
+
+
+                if (lstMenu2ByParent.Count > 0)
                 {
-                    foreach (var objmenu2 in lstMenu2ByParent)
+                    if (lstMenu2ByParent.Count == 3)
                     {
-                        objstr.Append("<ul class=\"1099011-0\" style=\"width: 25%;\">");
-                        objstr.Append("<li class=\"informative-text\"><a href=\"" + objmenu2.ChildUrl + "\">" + objmenu2.ChildName + "</a></li>");
-                        var lstMenu3ByMenu2 = lstMenuChild3.Where(p => p.PairantId == objmenu2.Id).ToList();
-                        //trường hợp khi danh sách menu cấp 3 không lớn hơn quy định số menu cấp 3 ở 1 cột
-                        //ở đây quy định là 1
-                        if(lstMenu3ByMenu2.Count == NumberMenu3PerColumn)
+                        foreach (var objmenu2 in lstMenu2ByParent)
                         {
+                            objstr.Append("<ul class=\"1099011-0\" style=\"width: 33%;\">");
+                            objstr.Append("<li class=\"informative-text\"><a href=\"" + objmenu2.ChildUrl + "\">" + objmenu2.ChildName + "</a></li>");
+                            var lstMenu3ByMenu2 = lstMenuChild3.Where(p => p.PairantId == objmenu2.Id).ToList();
+                            //trường hợp khi danh sách menu cấp 3 không lớn hơn quy định số menu cấp 3 ở 1 cột
+                            //ở đây quy định là 1
+
                             foreach (var objmenu3 in lstMenu3ByMenu2)
                             {
-                                objstr.Append("<li style=\"margin: 0px;\"><a style=\"color:red\" href=\"" + objmenu3.ChildUrl + "\">" + objmenu3.ChildName + "</a></li>");
+                                objstr.Append("<li ><a style=\"color:red\" href=\"" + objmenu3.ChildUrl + "\">" + objmenu3.ChildName + "</a></li>");
                             }
                             objstr.Append("</ul>");
+
                         }
-                        else // nếu lớn hơn số menu quy định ở 1 cột thì chia làm 2 cột
+                    }
+                    else if (lstMenu2ByParent.Count >= 4)
+                    {
+                        foreach (var objmenu2 in lstMenu2ByParent)
                         {
-                            int i = 0;
-                            string str = "<ul class=\"1099011-1\" style=\"width: 25%;\">";
+                            objstr.Append("<ul class=\"1099011-0\" style=\"width: 25%;\">");
+                            objstr.Append("<li class=\"informative-text\"><a href=\"" + objmenu2.ChildUrl + "\">" + objmenu2.ChildName + "</a></li>");
+                            var lstMenu3ByMenu2 = lstMenuChild3.Where(p => p.PairantId == objmenu2.Id).ToList();
+                            //trường hợp khi danh sách menu cấp 3 không lớn hơn quy định số menu cấp 3 ở 1 cột
+                            //ở đây quy định là 1
+
                             foreach (var objmenu3 in lstMenu3ByMenu2)
                             {
-                                if (i < NumberMenu3PerColumn)
-                                {
-                                    objstr.Append("<li><a style=\"color:red\" href=\"" + objmenu3.ChildUrl + "\">" + objmenu3.ChildName + "</a></li>");
-                                }
-                               
-                               
-                                if (i >= NumberMenu3PerColumn && lstMenu3ByMenu2.Count > NumberMenu3PerColumn)
-                                {
-                                    if (i == NumberMenu3PerColumn)
-                                    {
-                                        str = str + "<li style=\"margin-top: 36px;\"><a href=\"" + objmenu3.ChildUrl + "\">" + objmenu3.ChildName + "</a></li>";
-                                    }
-                                    else
-                                    {
-                                        str = str + "<li><a href=\"" + objmenu3.ChildUrl + "\">" + objmenu3.ChildName + "</a></li>";
-                                    }
-                                }
-                                i = i + 1;
+                                objstr.Append("<li ><a style=\"color:red\" href=\"" + objmenu3.ChildUrl + "\">" + objmenu3.ChildName + "</a></li>");
                             }
-                            str = str + "</ul>";
                             objstr.Append("</ul>");
-                            objstr.Append(str);
+
                         }
-                        
+                    }
+                    else if (lstMenu2ByParent.Count <= 2)
+                    {
+                        foreach (var objmenu2 in lstMenu2ByParent)
+                        {
+                            objstr.Append("<ul class=\"1099011-0\" style=\"width: 25%;\">");
+                            objstr.Append("<li class=\"informative-text\"><a href=\"" + objmenu2.ChildUrl + "\">" + objmenu2.ChildName + "</a></li>");
+                            var lstMenu3ByMenu2 = lstMenuChild3.Where(p => p.PairantId == objmenu2.Id).ToList();
+                            //trường hợp khi danh sách menu cấp 3 không lớn hơn quy định số menu cấp 3 ở 1 cột
+                            //ở đây quy định là 1
+                            if (lstMenu3ByMenu2.Count == NumberMenu3PerColumn)
+                            {
+                                foreach (var objmenu3 in lstMenu3ByMenu2)
+                                {
+                                    objstr.Append("<li ><a style=\"color:red\" href=\"" + objmenu3.ChildUrl + "\">" + objmenu3.ChildName + "</a></li>");
+                                }
+                                objstr.Append("</ul>");
+                            }
+                            else // nếu lớn hơn số menu quy định ở 1 cột thì chia làm 2 cột
+                            {
+                                int i = 0;
+                                string str = "<ul class=\"1099011-1\" style=\"width: 25%;\">";
+                                foreach (var objmenu3 in lstMenu3ByMenu2)
+                                {
+                                    if (i < NumberMenu3PerColumn)
+                                    {
+                                        objstr.Append("<li><a style=\"color:red\" href=\"" + objmenu3.ChildUrl + "\">" + objmenu3.ChildName + "</a></li>");
+                                    }
+
+
+                                    if (i >= NumberMenu3PerColumn && lstMenu3ByMenu2.Count > NumberMenu3PerColumn)
+                                    {
+                                        if (i == NumberMenu3PerColumn)
+                                        {
+                                            str = str + "<li style=\"margin-top: 36px;\"><a href=\"" + objmenu3.ChildUrl + "\">" + objmenu3.ChildName + "</a></li>";
+                                        }
+                                        else
+                                        {
+                                            str = str + "<li><a href=\"" + objmenu3.ChildUrl + "\">" + objmenu3.ChildName + "</a></li>";
+                                        }
+                                    }
+                                    i = i + 1;
+                                }
+                                str = str + "</ul>";
+                                objstr.Append("</ul>");
+                                objstr.Append(str);
+                            }
+
+                        }
                     }
                 }
                 objstr.Append("</div>");
             }
-           
+
             category = objstr.ToString();
         }
 
