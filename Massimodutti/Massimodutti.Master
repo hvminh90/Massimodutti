@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Massimodutti.master.cs" Inherits="Massimodutti.Massimodutti" %>
+
 <%--<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>--%>
 <!DOCTYPE html>
 
@@ -25,7 +26,7 @@
     <link href="Include/css/mass-help.css" rel="stylesheet" />
     <link href="Include/css/mass-cart.css" rel="stylesheet" />
     <link href="Include/css/mass-modal.css" rel="stylesheet" />
-        <link href="Include/css/mass-modal-account.css" rel="stylesheet" />
+    <link href="Include/css/mass-modal-account.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -34,30 +35,33 @@
             <div id="header-menu">
                 <div id="search">
                     <%--<input type="button" sytle="float:left" value="123"/>--%>
-                    <asp:ImageButton ID="btnSearch" runat="server" ImageUrl="~/Include/images/header/search.png" style="height: 13px;width: 13px;position: absolute;left: -20px;top: 5px;"/>
+                    <asp:ImageButton ID="btnSearch" runat="server" ImageUrl="~/Include/images/header/search.png" Style="height: 13px; width: 13px; position: absolute; left: -20px; top: 5px;" />
                     <%--<form id="searchForm">--%>
-                        <input type="text" id="search_text" name="search_text" placeholder="Từ khóa tìm kiếm">
+                    <input type="text" id="search_text" name="search_text" placeholder="Từ khóa tìm kiếm">
                     <%--</form>--%>
                 </div>
                 <div id="general-menu">
                     <ul>
                         <li class="help"><a href="help.html">Yêu thích</a></li>
-                          <li class="separator">|</li>
-                        <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalContact.aspx',{'width':'80%'})" >Liên hệ</a></li>
                         <li class="separator">|</li>
-                        <%if(Session["username"] != null) {%>
-                            <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalAccount.aspx',{'width':'50%','min-height':'300px','height':'300px','max-width':'640px'})" ><%=Session["username"] %></a></li>
-                        <%} else {%>
-                            <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalLogin.aspx',{'width':'50%','min-height':'300px','height':'300px','max-width':'640px'})" >Đăng nhập</a></li>
+                        <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalContact.aspx',{'width':'80%'})">Liên hệ</a></li>
+                        <li class="separator">|</li>
+                        <%if (Session["username"] != null)
+                          {%>
+                        <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalAccount.aspx',{'width':'50%','min-height':'300px','height':'300px','max-width':'640px'})"><%=Session["username"] %></a></li>
+                        <%}
+                          else
+                          {%>
+                        <li class="contact"><a href="javascript:void(0)" id="Button1" onclick="openModal('ModalLogin.aspx',{'width':'50%','min-height':'300px','height':'300px','max-width':'640px'})">Đăng nhập</a></li>
                         <%} %>
-                        
+
                         <%--<li class="separator account_sep">|</li>
                         <li class="account"><a href="javascript:void(0)">My Account</a></li>--%>
                         <li class="separator basket_sep">|</li>
                         <li class="basket"><a href="ShopingCart.aspx"><span class="basket-items-amount">0</span></a></li>
                     </ul>
                 </div>
-                  
+
             </div>
             <nav>
                 <div class="white-background">
@@ -80,67 +84,71 @@
                 </div>
                 <div id="sub-menu" style="display: none; opacity: 1;">
                     <%--<%=category %>--%>
-                    <div  id="1"  data-id="1" class="informatives" style="display:none;">
-                <ul class="1099011-0" style="width: 25%;">
-                    <li class="informative-text"><a href="#" data-id="1370021" data-parent="1099011"
-                                                    data-nameen="Shop by">Shop by</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/new-c1344507.html" data-id="1344507"
-                           data-parent="1099011" data-nameen="New">New</a></li>
-                    <li style="margin: 0px;"><a href="http://www.massimodutti.com/es/en/women/indigo-c675004.html"
-                                                data-id="675004" data-parent="1099011" data-nameen="Indigo
+                    <div id="1" data-id="1" class="informatives" style="display: none;">
+                        <ul class="1099011-0" style="width: 25%;">
+                            <li class="informative-text"><a href="#" data-id="1370021" data-parent="1099011"
+                                data-nameen="Shop by">Shop by</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/new-c1344507.html" data-id="1344507"
+                                data-parent="1099011" data-nameen="New">New</a></li>
+                            <li style="margin: 0px;"><a href="http://www.massimodutti.com/es/en/women/indigo-c675004.html"
+                                data-id="675004" data-parent="1099011" data-nameen="Indigo
 ">Indigo
                         <span class="label-new-subcategory">NEW</span></a></li>
-                </ul>
-                <ul class="1099011-1" style="width: 25%;">
-                    <li class="informative-text"><a href="#" data-id="1370023" data-parent="1099011"
-                                                    data-nameen="Collection">Collection</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/jackets-c675009.html" data-id="675009"
-                           data-parent="1099011" data-nameen="Jackets">Jackets</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/leather-jackets-c675010.html" data-id="675010"
-                           data-parent="1099011" data-nameen="Leather jackets">Leather jackets</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/blazers-c675008.html" data-id="675008"
-                           data-parent="1099011" data-nameen="Blazers">Blazers</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/suits-c1383007.html" data-id="1383007"
-                           data-parent="1099011" data-nameen="Suits">Suits</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/dresses-c1349502.html" data-id="1349502"
-                           data-parent="1099011" data-nameen="Dresses">Dresses</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/skirts-c675013.html" data-id="675013"
-                           data-parent="1099011" data-nameen="Skirts">Skirts</a></li>
-                    <li style="margin: 0px;"><a
-                            href="http://www.massimodutti.com/es/en/women/sweaters-%26-cardigans-c675007.html"
-                            data-id="675007" data-parent="1099011" data-nameen="Sweaters &amp; Cardigans">Sweaters &amp;
+                        </ul>
+                        <ul class="1099011-1" style="width: 25%;">
+                            <%--<li class="informative-text"><a href="#" data-id="1370023" data-parent="1099011"
+                                data-nameen="Collection">Collection</a></li>--%>
+                           <li class="informative-text"><a href="#" data-id="1370023" data-parent="1099011"
+                                data-nameen="Collection">Collection</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/leather-jackets-c675010.html" data-id="675010"
+                                data-parent="1099011" data-nameen="Leather jackets">Leather jackets</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/blazers-c675008.html" data-id="675008"
+                                data-parent="1099011" data-nameen="Blazers">Blazers</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/suits-c1383007.html" data-id="1383007"
+                                data-parent="1099011" data-nameen="Suits">Suits</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/dresses-c1349502.html" data-id="1349502"
+                                data-parent="1099011" data-nameen="Dresses">Dresses</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/skirts-c675013.html" data-id="675013"
+                                data-parent="1099011" data-nameen="Skirts">Skirts</a></li>
+                            <li style="margin: 0px;"><a
+                                href="http://www.massimodutti.com/es/en/women/sweaters-%26-cardigans-c675007.html"
+                                data-id="675007" data-parent="1099011" data-nameen="Sweaters &amp; Cardigans">Sweaters &amp;
                         Cardigans</a></li>
-                </ul>
-                <ul class="1099011-2" style="width: 25%;">
-                    <li style="margin-top: 36px;"><a
-                            href="http://www.massimodutti.com/es/en/women/shirts-%26-blouses-c675005.html"
-                            data-id="675005" data-parent="1099011" data-nameen="Shirts &amp; Blouses">Shirts &amp;
+                        </ul>
+                        <ul class="1099011-2" style="width: 25%;">
+                          <li class="informative-text"><a href="#" data-id="1370027" data-parent="1099011"
+                                data-nameen="Limited Editions">Limited Editions</a></li>
+                             <li><a href="http://www.massimodutti.com/es/en/women/jackets-c675009.html" data-id="675009"
+                                data-parent="1099011" data-nameen="Jackets">Jackets</a></li>
+                            <li ><a
+                                href="http://www.massimodutti.com/es/en/women/shirts-%26-blouses-c675005.html"
+                                data-id="675005" data-parent="1099011" data-nameen="Shirts &amp; Blouses">Shirts &amp;
                         Blouses</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/t-shirts-c675006.html" data-id="675006"
-                           data-parent="1099011" data-nameen="T-shirts">T-shirts</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/trousers-c675011.html" data-id="675011"
-                           data-parent="1099011" data-nameen="Trousers">Trousers</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/denim-c675012.html" data-id="675012"
-                           data-parent="1099011" data-nameen="Denim">Denim</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/shoes-c675015.html" data-id="675015"
-                           data-parent="1099011" data-nameen="Shoes">Shoes</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/bags-%26-purses-c675016.html" data-id="675016"
-                           data-parent="1099011" data-nameen="Bags &amp; Purses">Bags &amp; Purses</a></li>
-                    <li style="margin: 0px;"><a href="http://www.massimodutti.com/es/en/women/accessories-c675014.html"
-                                                data-id="675014" data-parent="1099011" data-nameen="Accessories">Accessories</a>
-                    </li>
-                </ul>
-                <ul class="1099011-3" style="width: 24%;">
-                    <li class="informative-text"><a href="#" data-id="1370027" data-parent="1099011"
-                                                    data-nameen="Limited Editions">Limited Editions</a></li>
-                    <li><a href="http://www.massimodutti.com/es/en/women/the-equestrian-c1337011.html" data-id="1337011"
-                           data-parent="1099011" data-nameen="THE EQUESTRIAN">THE EQUESTRIAN</a></li>
-                    <li style="margin: 0px;"><a
-                            href="http://www.massimodutti.com/es/en/women/nyc-limited-edition-c1319008.html"
-                            data-id="1319008" data-parent="1099011" data-nameen="NYC LIMITED EDITION">NYC LIMITED
+                            <li><a href="http://www.massimodutti.com/es/en/women/t-shirts-c675006.html" data-id="675006"
+                                data-parent="1099011" data-nameen="T-shirts">T-shirts</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/trousers-c675011.html" data-id="675011"
+                                data-parent="1099011" data-nameen="Trousers">Trousers</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/denim-c675012.html" data-id="675012"
+                                data-parent="1099011" data-nameen="Denim">Denim</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/shoes-c675015.html" data-id="675015"
+                                data-parent="1099011" data-nameen="Shoes">Shoes</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/bags-%26-purses-c675016.html" data-id="675016"
+                                data-parent="1099011" data-nameen="Bags &amp; Purses">Bags &amp; Purses</a></li>
+                            <li style="margin: 0px;"><a href="http://www.massimodutti.com/es/en/women/accessories-c675014.html"
+                                data-id="675014" data-parent="1099011" data-nameen="Accessories">Accessories</a>
+                            </li>
+                        </ul>
+                        <ul class="1099011-3" style="width: 24%;">
+                            <li class="informative-text"><a href="#" data-id="1370027" data-parent="1099011"
+                                data-nameen="Limited Editions">Limited Editions</a></li>
+                            <li><a href="http://www.massimodutti.com/es/en/women/the-equestrian-c1337011.html" data-id="1337011"
+                                data-parent="1099011" data-nameen="THE EQUESTRIAN">THE EQUESTRIAN</a></li>
+                            <li style="margin: 0px;"><a
+                                href="http://www.massimodutti.com/es/en/women/nyc-limited-edition-c1319008.html"
+                                data-id="1319008" data-parent="1099011" data-nameen="NYC LIMITED EDITION">NYC LIMITED
                         EDITION</a></li>
-                </ul>
-            </div>-->
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -153,29 +161,35 @@
 
 
         <footer style="opacity: 1;">
-           
-            <div id="footer-top">
-	            <div class="footer-top-background">
-		            <ul>
-			            <li class="new-apps"><a href="http://www.massimodutti.com/webapp/wcs/stores/servlet/ItxStandardNewAppsPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">BLOG<div></div></a></li><li class="shops"><a href="javascript:void(0)" onclick="openModal('ModalMap.aspx',{'width':'90%'});">CỬA HÀNG<div></div></a> </li><li style="border-right-style: none;"><span style="padding: 19px 0px;">TIN TỨC</span><div style="top: 46px;"><%--<form id="newsletter-form" action="http://www.massimodutti.com/webapp/wcs/stores/servlet/NewsletterPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">--%><input id="newsletter" name="newsletter" type="text" placeholder="Xin nhập email * "><%--</form>--%></div></li></ul>
 
-	            </div>
+            <div id="footer-top">
+                <div class="footer-top-background">
+                    <ul>
+                        <li class="new-apps"><a href="http://www.massimodutti.com/webapp/wcs/stores/servlet/ItxStandardNewAppsPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">BLOG<div></div>
+                        </a></li>
+                        <li class="shops"><a href="javascript:void(0)" onclick="openModal('ModalMap.aspx',{'width':'90%'});">CỬA HÀNG<div></div>
+                        </a></li>
+                        <li style="border-right-style: none;"><span style="padding: 19px 0px;">TIN TỨC</span><div style="top: 46px;"><%--<form id="newsletter-form" action="http://www.massimodutti.com/webapp/wcs/stores/servlet/NewsletterPage?catalogId=30220004&amp;langId=-1&amp;storeId=34009450">--%><input id="newsletter" name="newsletter" type="text" placeholder="Xin nhập email * "><%--</form>--%></div>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
             <div id="footer-bottom">
                 <div id="footer-menu">
                     <ul>
 
                         <li><a href="javascript:void(0);" data-link="cham-soc-khach-hang" data-go="0" data-help="2">Chăm sóc khách hàng</a></li>
-			            <li class="separator">|</li>
-			            <li class="politicacookiesFooter"><a href="javascript:void(0);" data-link="huong-dan-mua-hang" data-go="0"  data-help="3">Hướng dẫn mua hàng</a></li>
-			            <li class="separator">|</li>
-			            <li><a href="javascript:void(0);" data-link="giao-hang-toan-quoc" data-go="0"  data-help="4">Giao hàng toàn quốc</a></li>
-			            <li class="separator">|</li>
-			            <li class="empresaFooter"><a href="javascript:void(0);" data-link="chinh-sach-doi-tra" data-go="0"  data-help="5">Chính sách đổi/trả</a></li>
-			            <li class="separator">|</li>
-			            <li class="joinfashionFooter"><a  href="javascript:void(0);" data-link="faq" data-go="0"  data-help="6" >FAQ?</a></li>
-			            <li class="separator">|</li>
-			            <li class="ayudaFooter no-border-right"><a href="javascript:void(0)" data-link="lien-he"  data-go="0"  data-help="1">Liên hệ</a></li>
+                        <li class="separator">|</li>
+                        <li class="politicacookiesFooter"><a href="javascript:void(0);" data-link="huong-dan-mua-hang" data-go="0" data-help="3">Hướng dẫn mua hàng</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="javascript:void(0);" data-link="giao-hang-toan-quoc" data-go="0" data-help="4">Giao hàng toàn quốc</a></li>
+                        <li class="separator">|</li>
+                        <li class="empresaFooter"><a href="javascript:void(0);" data-link="chinh-sach-doi-tra" data-go="0" data-help="5">Chính sách đổi/trả</a></li>
+                        <li class="separator">|</li>
+                        <li class="joinfashionFooter"><a href="javascript:void(0);" data-link="faq" data-go="0" data-help="6">FAQ?</a></li>
+                        <li class="separator">|</li>
+                        <li class="ayudaFooter no-border-right"><a href="javascript:void(0)" data-link="lien-he" data-go="0" data-help="1">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div id="social-menu">
@@ -217,13 +231,12 @@
         <script src="Include/js/mass-help.js"></script>
         <script src="Include/js/mass-open-modal.js"></script>
         <script src="Include/js/mass-product.js"></script>
-           <script src="Include/js/jscrollPanel/jquery.jscrollpane.min.js"></script>
-    <script src="Include/js/jscrollPanel/jquery.mousewheel.js"></script>
+        <script src="Include/js/jscrollPanel/jquery.jscrollpane.min.js"></script>
+        <script src="Include/js/jscrollPanel/jquery.mousewheel.js"></script>
         <div id="tiendas" class="modal_window" style="display: none;">
-            
         </div>
 
-       
+
     </form>
 </body>
 </html>
